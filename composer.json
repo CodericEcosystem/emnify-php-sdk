@@ -26,7 +26,10 @@
         "phpunit/phpunit": "^10.2"
     },
     "autoload": {
-        "psr-4": { "CodericEcosystem\\EmnifySdk\\" : "lib/" }
+        "psr-4": { "CodericEcosystem\\EmnifySdk\\" : "lib/" },
+        "classmap": [
+            "lib/"
+        ]
     },
     "autoload-dev": {
         "psr-4": { "CodericEcosystem\\EmnifySdk\\" : "test/" }
