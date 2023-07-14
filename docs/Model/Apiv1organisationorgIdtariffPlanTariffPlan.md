@@ -1,0 +1,47 @@
+# Apiv1organisationorgIdtariffPlanTariffPlan
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**organisation_id** | **string** |  | [optional] 
+**name** | **string** |  | [optional] 
+**description** | **string** |  | [optional] 
+**tariff_plan_type_id** | **string** |  | [optional] 
+**min_tariff_plan_runtime_id** | **string** |  | [optional] 
+**level** | **string** |  | [optional] 
+**tariff_plan_runtime_id** | **object** |  | [optional] 
+**owner_organisation_id** | **string** |  | [optional] 
+**public_for_child_organisations** | **bool** |  | [optional] 
+**creation_date** | **string** |  | [optional] 
+**activation_date** | **string** |  | [optional] 
+**deprecation_date** | **string** |  | [optional] 
+**notes** | **object** |  | [optional] 
+**rate** | **float** |  | [optional] 
+**yearly_rate** | **float** |  | [optional] 
+**sim_activation_fee** | **float** |  | [optional] 
+**max_active_sims** | **float** |  | [optional] 
+**add_active_sims_rate** | **float** |  | [optional] 
+**add_active_sim_batch** | **float** |  | [optional] 
+**max_service_profiles** | **float** |  | [optional] 
+**max_tariff_profiles** | **float** |  | [optional] 
+**max_users** | **float** |  | [optional] 
+**minimum_runtime** | **float** |  | [optional] 
+**api_access_allowed** | **float** |  | [optional] 
+**vpn_access** | **float** |  | [optional] 
+**private** | **float** |  | [optional] 
+**dtype** | **string** |  | [optional] 
+**evaluation** | **bool** |  | [optional] 
+**expiry_time** | **float** |  | [optional] 
+**billing_disabled** | **bool** |  | [optional] 
+**used_count** | **float** |  | [optional] 
+**id** | **float** |  | [optional] 
+**status** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanTariffPlanStatus**](Apiv1organisationorgIdtariffPlanTariffPlanStatus.md) |  | [optional] 
+**currency** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanTariffPlanCurrency**](Apiv1organisationorgIdtariffPlanTariffPlanCurrency.md) |  | [optional] 
+**visibility** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanTariffPlanVisibility**](Apiv1organisationorgIdtariffPlanTariffPlanVisibility.md) |  | [optional] 
+**price** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanTariffPlanPrice**](Apiv1organisationorgIdtariffPlanTariffPlanPrice.md) |  | [optional] 
+**service_level** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanTariffPlanServiceLevel**](Apiv1organisationorgIdtariffPlanTariffPlanServiceLevel.md) |  | [optional] 
+**federation_allowed** | **bool** |  | [optional] 
+**factory_test_mode_allowed** | **bool** |  | [optional] 
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+

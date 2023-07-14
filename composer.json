@@ -32,6 +32,6 @@
         "psr-4": { "CodericEcosystem\\EmnifySdk\\" : "test/" }
     },
     "scripts": {
-        "test": "./vendor/bin/phpunit tests"
+        "test": "./vendor/bin/phpunit test"
     }
 }

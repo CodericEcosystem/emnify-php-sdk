@@ -1,0 +1,11 @@
+# GetOrganisationActiveTariffPlanResponseAppliedPriceSimActivatedRate
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**scale_start** | **float** |  | [optional] 
+**rate** | **float** |  | [optional] 
+**volume** | **int** |  | [optional] 
+
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
+

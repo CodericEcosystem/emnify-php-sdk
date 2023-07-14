@@ -5,13 +5,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional] 
 **username** | **string** |  | [optional] 
-**first_name** | **string** |  | [optional] 
-**last_name** | **string** |  | [optional] 
-**email** | **string** |  | [optional] 
-**password** | **string** |  | [optional] 
-**phone** | **string** |  | [optional] 
-**user_status** | **int** | User Status | [optional] 
+**name** | **string** |  | [optional] 
+**created** | **string** |  | [optional] 
+**status** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1userStatus**](Apiv1userStatus.md) |  | [optional] 
+**organisation** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1eventOrganisation**](Apiv1eventOrganisation.md) |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
+[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 
