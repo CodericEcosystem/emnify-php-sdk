@@ -1,0 +1,35 @@
+{
+    "name": "coderic-ecosystem/emnify-sdk",
+    "description": "Supply your swarm of IoT devices with cloud connectivity by emnify. Automate your routines with this SDK for PHP.    ",
+    "keywords": [
+        "php",
+        "sdk",
+        "api"
+    ],
+    "homepage": "https://github.com/coderic",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Swagger and contributors",
+            "homepage": "https://github.com/CodericEcosystem/emnify-sdk"
+        }
+    ],
+    "require": {
+        "php": "^5",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "squizlabs/php_codesniffer": "~2.6",
+        "friendsofphp/php-cs-fixer": "~2.12"
+    },
+    "autoload": {
+        "psr-4": { "CodericEcosystem\\EmnifySdk\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "CodericEcosystem\\EmnifySdk\\" : "test/" }
+    }
+}
