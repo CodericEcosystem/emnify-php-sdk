@@ -1,4 +1,4 @@
-# CodericEcosystem\EmnifySdk\CloudConnectApi
+# Emnify\EmnifySdk\CloudConnectApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -27,17 +27,17 @@ Creates a Transit Gateway breakout towards the customer AWS account.  After the 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\CloudConnectApi(
+$apiInstance = new Emnify\EmnifySdk\Api\CloudConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\CreateCloudConnectTGWRequest(); // \CodericEcosystem\EmnifySdk\Model\CreateCloudConnectTGWRequest | 
+$body = new \Emnify\EmnifySdk\Model\CreateCloudConnectTGWRequest(); // \Emnify\EmnifySdk\Model\CreateCloudConnectTGWRequest | 
 
 try {
     $apiInstance->createCloudConnectAttachmentTGW($body);
@@ -51,7 +51,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\CreateCloudConnectTGWRequest**](../Model/CreateCloudConnectTGWRequest.md)|  | [optional]
+ **body** | [**\Emnify\EmnifySdk\Model\CreateCloudConnectTGWRequest**](../Model/CreateCloudConnectTGWRequest.md)|  | [optional]
 
 ### Return type
 
@@ -80,17 +80,17 @@ Creates a CloudConnect attachment via a specified VPN server. Currently Static a
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\CloudConnectApi(
+$apiInstance = new Emnify\EmnifySdk\Api\CloudConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\CreateCloudConnectVPNRequest1(); // \CodericEcosystem\EmnifySdk\Model\CreateCloudConnectVPNRequest1 | 
+$body = new \Emnify\EmnifySdk\Model\CreateCloudConnectVPNRequest1(); // \Emnify\EmnifySdk\Model\CreateCloudConnectVPNRequest1 | 
 
 try {
     $apiInstance->createCloudConnectAttachmentVPN($body);
@@ -104,7 +104,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\CreateCloudConnectVPNRequest1**](../Model/CreateCloudConnectVPNRequest1.md)|  | [optional]
+ **body** | [**\Emnify\EmnifySdk\Model\CreateCloudConnectVPNRequest1**](../Model/CreateCloudConnectVPNRequest1.md)|  | [optional]
 
 ### Return type
 
@@ -133,11 +133,11 @@ Deletes the specified CloudConnect attachment.  Attachments cannot be deleted if
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\CloudConnectApi(
+$apiInstance = new Emnify\EmnifySdk\Api\CloudConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -186,11 +186,11 @@ Displays the details including configured CIDR blocks of a CloudConnect Attachme
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\CloudConnectApi(
+$apiInstance = new Emnify\EmnifySdk\Api\CloudConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -229,7 +229,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCloudConnectAttachments**
-> \CodericEcosystem\EmnifySdk\Model\InlineResponse20010[] getCloudConnectAttachments($status, $type, $organisation)
+> \Emnify\EmnifySdk\Model\InlineResponse20010[] getCloudConnectAttachments($status, $type, $organisation)
 
 List all CloudConnect attachments of an organisation
 
@@ -240,11 +240,11 @@ Lists all CloudConnect attachments of the logged in organisation if it is an Ent
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\CloudConnectApi(
+$apiInstance = new Emnify\EmnifySdk\Api\CloudConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -273,7 +273,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\InlineResponse20010[]**](../Model/InlineResponse20010.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse20010[]**](../Model/InlineResponse20010.md)
 
 ### Authorization
 
@@ -287,7 +287,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCloudConnectAvailableRegionsByBreakoutType**
-> \CodericEcosystem\EmnifySdk\Model\InlineResponse20011[] getCloudConnectAvailableRegionsByBreakoutType($breakout_type_id)
+> \Emnify\EmnifySdk\Model\InlineResponse20011[] getCloudConnectAvailableRegionsByBreakoutType($breakout_type_id)
 
 Get list of available CloudConnect regions by breakout type
 
@@ -298,11 +298,11 @@ Returns a list of regions available for use when creating new CloudConnect break
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\CloudConnectApi(
+$apiInstance = new Emnify\EmnifySdk\Api\CloudConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\InlineResponse20011[]**](../Model/InlineResponse20011.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse20011[]**](../Model/InlineResponse20011.md)
 
 ### Authorization
 
@@ -341,7 +341,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCloudConnectBreakoutTypes**
-> \CodericEcosystem\EmnifySdk\Model\CloudConnectBreakoutType[] getCloudConnectBreakoutTypes()
+> \Emnify\EmnifySdk\Model\CloudConnectBreakoutType[] getCloudConnectBreakoutTypes()
 
 List CloudConnect breakout types
 
@@ -352,11 +352,11 @@ Lists all CloudConnect breakout types.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\CloudConnectApi(
+$apiInstance = new Emnify\EmnifySdk\Api\CloudConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -377,7 +377,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\CloudConnectBreakoutType[]**](../Model/CloudConnectBreakoutType.md)
+[**\Emnify\EmnifySdk\Model\CloudConnectBreakoutType[]**](../Model/CloudConnectBreakoutType.md)
 
 ### Authorization
 
@@ -402,11 +402,11 @@ This endpoint has been deprecated. Please check `GET /api/v1/cnc/breakout_type/{
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\CloudConnectApi(
+$apiInstance = new Emnify\EmnifySdk\Api\CloudConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -455,11 +455,11 @@ Returns a list of the configured monthly prices for CloudConnect breakouts.  Mas
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\CloudConnectApi(
+$apiInstance = new Emnify\EmnifySdk\Api\CloudConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -505,11 +505,11 @@ Retries the creation of a Transit Gateway breakout where the accept attachment s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\CloudConnectApi(
+$apiInstance = new Emnify\EmnifySdk\Api\CloudConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

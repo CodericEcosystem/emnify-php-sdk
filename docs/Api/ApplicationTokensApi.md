@@ -1,4 +1,4 @@
-# CodericEcosystem\EmnifySdk\ApplicationTokensApi
+# Emnify\EmnifySdk\ApplicationTokensApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -20,17 +20,17 @@ The `description` of the token may be updated and the Application Token can be r
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\ApplicationTokensApi(
+$apiInstance = new Emnify\EmnifySdk\Api\ApplicationTokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\ApplicationToken(); // \CodericEcosystem\EmnifySdk\Model\ApplicationToken | 
+$body = new \Emnify\EmnifySdk\Model\ApplicationToken(); // \Emnify\EmnifySdk\Model\ApplicationToken | 
 $app_token_id = 1.2; // float | application token ID
 
 try {
@@ -45,7 +45,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\ApplicationToken**](../Model/ApplicationToken.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\ApplicationToken**](../Model/ApplicationToken.md)|  |
  **app_token_id** | **float**| application token ID |
 
 ### Return type
@@ -64,7 +64,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **applicationTokenGet**
-> \CodericEcosystem\EmnifySdk\Model\ListofApplicationTokensresponse[] applicationTokenGet()
+> \Emnify\EmnifySdk\Model\ListofApplicationTokensresponse[] applicationTokenGet()
 
 List Application Tokens
 
@@ -75,11 +75,11 @@ Returns the list of application tokens for the organisation of the requesting us
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\ApplicationTokensApi(
+$apiInstance = new Emnify\EmnifySdk\Api\ApplicationTokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -100,7 +100,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\ListofApplicationTokensresponse[]**](../Model/ListofApplicationTokensresponse.md)
+[**\Emnify\EmnifySdk\Model\ListofApplicationTokensresponse[]**](../Model/ListofApplicationTokensresponse.md)
 
 ### Authorization
 
@@ -114,7 +114,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **applicationTokenPost**
-> \CodericEcosystem\EmnifySdk\Model\CreateApplicationTokenresponse applicationTokenPost($body)
+> \Emnify\EmnifySdk\Model\CreateApplicationTokenresponse applicationTokenPost($body)
 
 Create Application Token
 
@@ -125,17 +125,17 @@ Creates a new application token. ID must not be specified, as it is auto-generat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\ApplicationTokensApi(
+$apiInstance = new Emnify\EmnifySdk\Api\ApplicationTokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\CreateApplicationTokenrequest(); // \CodericEcosystem\EmnifySdk\Model\CreateApplicationTokenrequest | 
+$body = new \Emnify\EmnifySdk\Model\CreateApplicationTokenrequest(); // \Emnify\EmnifySdk\Model\CreateApplicationTokenrequest | 
 
 try {
     $result = $apiInstance->applicationTokenPost($body);
@@ -150,11 +150,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\CreateApplicationTokenrequest**](../Model/CreateApplicationTokenrequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\CreateApplicationTokenrequest**](../Model/CreateApplicationTokenrequest.md)|  |
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\CreateApplicationTokenresponse**](../Model/CreateApplicationTokenresponse.md)
+[**\Emnify\EmnifySdk\Model\CreateApplicationTokenresponse**](../Model/CreateApplicationTokenresponse.md)
 
 ### Authorization
 

@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 **tariff_currency_category_id** | **string** |  | [optional] 
 **used_count** | **string** |  | [optional] 
 **assigned_count** | **string** |  | [optional] 
-**currency** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1tariffProfileTariffCurrency**](Apiv1tariffProfileTariffCurrency.md) |  | [optional] 
+**currency** | [**\Emnify\EmnifySdk\Model\Apiv1tariffProfileTariffCurrency**](Apiv1tariffProfileTariffCurrency.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

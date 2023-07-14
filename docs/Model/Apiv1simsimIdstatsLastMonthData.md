@@ -13,8 +13,8 @@ Name | Type | Description | Notes
 **cost** | **float** |  | [optional] 
 **currency_id** | **float** |  | [optional] 
 **id** | **float** |  | [optional] 
-**traffic_type** | [**\CodericEcosystem\EmnifySdk\Model\OrganisationDailyTrafficObjectTrafficType**](OrganisationDailyTrafficObjectTrafficType.md) |  | [optional] 
-**currency** | [**\CodericEcosystem\EmnifySdk\Model\Currency**](Currency.md) |  | [optional] 
+**traffic_type** | [**\Emnify\EmnifySdk\Model\OrganisationDailyTrafficObjectTrafficType**](OrganisationDailyTrafficObjectTrafficType.md) |  | [optional] 
+**currency** | [**\Emnify\EmnifySdk\Model\Currency**](Currency.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

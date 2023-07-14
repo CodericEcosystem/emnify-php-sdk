@@ -24,8 +24,8 @@ Name | Type | Description | Notes
 **expiry_time** | **float** |  | [optional] 
 **used_count** | **float** |  | [optional] 
 **id** | **float** |  | [optional] 
-**price** | [**\CodericEcosystem\EmnifySdk\Model\GetOrganisationActiveTariffPlanResponseTariffPlanPrice**](GetOrganisationActiveTariffPlanResponseTariffPlanPrice.md) |  | [optional] 
-**currency** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanTariffPlanCurrency**](Apiv1organisationorgIdtariffPlanTariffPlanCurrency.md) |  | [optional] 
+**price** | [**\Emnify\EmnifySdk\Model\GetOrganisationActiveTariffPlanResponseTariffPlanPrice**](GetOrganisationActiveTariffPlanResponseTariffPlanPrice.md) |  | [optional] 
+**currency** | [**\Emnify\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanTariffPlanCurrency**](Apiv1organisationorgIdtariffPlanTariffPlanCurrency.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

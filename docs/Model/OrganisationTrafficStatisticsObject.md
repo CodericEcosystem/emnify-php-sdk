@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **cost** | **float** | Total cost | [optional] 
 **month** | **string** | The month that the data has been accumulated in &#x60;YYYY-MM-01&#x60; format | [optional] 
-**currency** | [**\CodericEcosystem\EmnifySdk\Model\Currency**](Currency.md) |  | [optional] 
-**traffic_type** | [**\CodericEcosystem\EmnifySdk\Model\OrganisationDailyTrafficObjectTrafficType**](OrganisationDailyTrafficObjectTrafficType.md) |  | [optional] 
+**currency** | [**\Emnify\EmnifySdk\Model\Currency**](Currency.md) |  | [optional] 
+**traffic_type** | [**\Emnify\EmnifySdk\Model\OrganisationDailyTrafficObjectTrafficType**](OrganisationDailyTrafficObjectTrafficType.md) |  | [optional] 
 **volume** | **float** | Total consumption (&#x60;volume_rx&#x60; + &#x60;volume_tx&#x60;) | [optional] 
 **volume_rx** | **float** | * For traffic type &#x60;5&#x60; (&#x60;Data&#x60;): Downloaded data * For traffic type &#x60;6&#x60; (&#x60;SMS&#x60;): SMS MT | [optional] 
 **volume_tx** | **float** | * For traffic type &#x60;5&#x60; (&#x60;Data&#x60;): Uploaded data * For traffic type &#x60;6&#x60; (&#x60;SMS&#x60;): SMS MO | [optional] 

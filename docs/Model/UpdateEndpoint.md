@@ -4,12 +4,12 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tags** | **string** |  | [optional] 
-**status** | [**\CodericEcosystem\EmnifySdk\Model\Status**](Status.md) |  | [optional] 
-**service_profile** | [**\CodericEcosystem\EmnifySdk\Model\ServiceProfile**](ServiceProfile.md) |  | [optional] 
-**tariff_profile** | [**\CodericEcosystem\EmnifySdk\Model\TariffProfile**](TariffProfile.md) |  | [optional] 
+**status** | [**\Emnify\EmnifySdk\Model\Status**](Status.md) |  | [optional] 
+**service_profile** | [**\Emnify\EmnifySdk\Model\ServiceProfile**](ServiceProfile.md) |  | [optional] 
+**tariff_profile** | [**\Emnify\EmnifySdk\Model\TariffProfile**](TariffProfile.md) |  | [optional] 
 **ip_address** | **string** |  | [optional] 
-**ip_address_space** | [**\CodericEcosystem\EmnifySdk\Model\HasId**](HasId.md) |  | [optional] 
-**sim** | [**\CodericEcosystem\EmnifySdk\Model\HasId**](HasId.md) |  | [optional] 
+**ip_address_space** | [**\Emnify\EmnifySdk\Model\HasId**](HasId.md) |  | [optional] 
+**sim** | [**\Emnify\EmnifySdk\Model\HasId**](HasId.md) |  | [optional] 
 **imei** | **string** |  | [optional] 
 **imei_lock** | **bool** |  | [optional] 
 

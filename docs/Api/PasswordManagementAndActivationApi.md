@@ -1,4 +1,4 @@
-# CodericEcosystem\EmnifySdk\PasswordManagementAndActivationApi
+# Emnify\EmnifySdk\PasswordManagementAndActivationApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -20,12 +20,12 @@ This service activates the user account and sets a password. The activation key 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\PasswordManagementAndActivationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\PasswordManagementAndActivationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\AccountActivationrequest(); // \CodericEcosystem\EmnifySdk\Model\AccountActivationrequest | 
+$body = new \Emnify\EmnifySdk\Model\AccountActivationrequest(); // \Emnify\EmnifySdk\Model\AccountActivationrequest | 
 
 try {
     $apiInstance->userActivationPost($body);
@@ -39,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\AccountActivationrequest**](../Model/AccountActivationrequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\AccountActivationrequest**](../Model/AccountActivationrequest.md)|  |
 
 ### Return type
 
@@ -68,12 +68,12 @@ This service re-sends activation mail to the user.  As this endpoint is open to 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\PasswordManagementAndActivationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\PasswordManagementAndActivationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\ResendActivationMailrequest(); // \CodericEcosystem\EmnifySdk\Model\ResendActivationMailrequest | 
+$body = new \Emnify\EmnifySdk\Model\ResendActivationMailrequest(); // \Emnify\EmnifySdk\Model\ResendActivationMailrequest | 
 
 try {
     $apiInstance->userActivationResendPost($body);
@@ -87,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\ResendActivationMailrequest**](../Model/ResendActivationMailrequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\ResendActivationMailrequest**](../Model/ResendActivationMailrequest.md)|  |
 
 ### Return type
 
@@ -116,17 +116,17 @@ Password change service.  Allows to change the password for the currently authen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\PasswordManagementAndActivationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\PasswordManagementAndActivationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\ChangePasswordrequest(); // \CodericEcosystem\EmnifySdk\Model\ChangePasswordrequest | 
+$body = new \Emnify\EmnifySdk\Model\ChangePasswordrequest(); // \Emnify\EmnifySdk\Model\ChangePasswordrequest | 
 
 try {
     $apiInstance->userPasswordPatch($body);
@@ -140,7 +140,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\ChangePasswordrequest**](../Model/ChangePasswordrequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\ChangePasswordrequest**](../Model/ChangePasswordrequest.md)|  |
 
 ### Return type
 

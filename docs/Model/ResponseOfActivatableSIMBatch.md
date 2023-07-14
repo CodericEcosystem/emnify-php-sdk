@@ -15,8 +15,8 @@ Name | Type | Description | Notes
 **logistic_center_id** | **string** |  | [optional] 
 **article_id** | **string** |  | [optional] 
 **id** | **int** |  | [optional] 
-**status** | [**\CodericEcosystem\EmnifySdk\Model\Status**](Status.md) |  | [optional] 
-**model** | [**\CodericEcosystem\EmnifySdk\Model\SimModel**](SimModel.md) |  | [optional] 
+**status** | [**\Emnify\EmnifySdk\Model\Status**](Status.md) |  | [optional] 
+**model** | [**\Emnify\EmnifySdk\Model\SimModel**](SimModel.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

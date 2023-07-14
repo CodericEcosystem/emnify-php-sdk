@@ -1,4 +1,4 @@
-# CodericEcosystem\EmnifySdk\AuthenticationApi
+# Emnify\EmnifySdk\AuthenticationApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**userMfaTypeGet**](AuthenticationApi.md#usermfatypeget) | **GET** /api/v1/user/mfa/type | List MFA key types
 
 # **authenticate**
-> \CodericEcosystem\EmnifySdk\Model\AuthenticationResponse authenticate($body)
+> \Emnify\EmnifySdk\Model\AuthenticationResponse authenticate($body)
 
 Retrieve Authentication Token
 
@@ -25,12 +25,12 @@ This entrypoint returns a JWT `auth_token` for authenticating further requests t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\AuthenticationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\Authentication(); // \CodericEcosystem\EmnifySdk\Model\Authentication | Authentication using Application Tokens or user/password combination
+$body = new \Emnify\EmnifySdk\Model\Authentication(); // \Emnify\EmnifySdk\Model\Authentication | Authentication using Application Tokens or user/password combination
 
 try {
     $result = $apiInstance->authenticate($body);
@@ -45,11 +45,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\Authentication**](../Model/Authentication.md)| Authentication using Application Tokens or user/password combination |
+ **body** | [**\Emnify\EmnifySdk\Model\Authentication**](../Model/Authentication.md)| Authentication using Application Tokens or user/password combination |
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\AuthenticationResponse**](../Model/AuthenticationResponse.md)
+[**\Emnify\EmnifySdk\Model\AuthenticationResponse**](../Model/AuthenticationResponse.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postMfa**
-> \CodericEcosystem\EmnifySdk\Model\CreateMFAKeyResponse postMfa($body)
+> \Emnify\EmnifySdk\Model\CreateMFAKeyResponse postMfa($body)
 
 Create an MFA key
 
@@ -74,17 +74,17 @@ Generate and store a MFA key for the requesting user. The MFA key will have the 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\AuthenticationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\UserMfaBody(); // \CodericEcosystem\EmnifySdk\Model\UserMfaBody | 
+$body = new \Emnify\EmnifySdk\Model\UserMfaBody(); // \Emnify\EmnifySdk\Model\UserMfaBody | 
 
 try {
     $result = $apiInstance->postMfa($body);
@@ -99,11 +99,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\UserMfaBody**](../Model/UserMfaBody.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\UserMfaBody**](../Model/UserMfaBody.md)|  |
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\CreateMFAKeyResponse**](../Model/CreateMFAKeyResponse.md)
+[**\Emnify\EmnifySdk\Model\CreateMFAKeyResponse**](../Model/CreateMFAKeyResponse.md)
 
 ### Authorization
 
@@ -128,17 +128,17 @@ Activate the MFA key of the requesting user.  You must provide following JSON fi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\AuthenticationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\ActivateMFAKeyRequest(); // \CodericEcosystem\EmnifySdk\Model\ActivateMFAKeyRequest | 
+$body = new \Emnify\EmnifySdk\Model\ActivateMFAKeyRequest(); // \Emnify\EmnifySdk\Model\ActivateMFAKeyRequest | 
 $key_id = 1.2; // float | Key ID
 
 try {
@@ -153,7 +153,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\ActivateMFAKeyRequest**](../Model/ActivateMFAKeyRequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\ActivateMFAKeyRequest**](../Model/ActivateMFAKeyRequest.md)|  |
  **key_id** | **float**| Key ID |
 
 ### Return type
@@ -183,11 +183,11 @@ Delete an MFA key for a given user.  An own MFA key can also be deleted with a c
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\AuthenticationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -227,7 +227,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userMfaStatusGet**
-> \CodericEcosystem\EmnifySdk\Model\MFAKeyStatusLookupresponse[] userMfaStatusGet()
+> \Emnify\EmnifySdk\Model\MFAKeyStatusLookupresponse[] userMfaStatusGet()
 
 List MFA key Statuses
 
@@ -238,11 +238,11 @@ Retrieve a list of possible MFA Key statuses.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\AuthenticationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -263,7 +263,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\MFAKeyStatusLookupresponse[]**](../Model/MFAKeyStatusLookupresponse.md)
+[**\Emnify\EmnifySdk\Model\MFAKeyStatusLookupresponse[]**](../Model/MFAKeyStatusLookupresponse.md)
 
 ### Authorization
 
@@ -288,11 +288,11 @@ Deletes a trusted device.  Removing one's own trusted device can also be perform
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\AuthenticationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -332,7 +332,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userMfaTrustedDeviceByUserIdGet**
-> \CodericEcosystem\EmnifySdk\Model\Listoftrusteddevicesresponse[] userMfaTrustedDeviceByUserIdGet($user_id)
+> \Emnify\EmnifySdk\Model\Listoftrusteddevicesresponse[] userMfaTrustedDeviceByUserIdGet($user_id)
 
 List Trusted Devices
 
@@ -343,11 +343,11 @@ Returns the list of trusted devices for a given user.  The list of one's own tru
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\AuthenticationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -372,7 +372,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\Listoftrusteddevicesresponse[]**](../Model/Listoftrusteddevicesresponse.md)
+[**\Emnify\EmnifySdk\Model\Listoftrusteddevicesresponse[]**](../Model/Listoftrusteddevicesresponse.md)
 
 ### Authorization
 
@@ -386,7 +386,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userMfaTypeGet**
-> \CodericEcosystem\EmnifySdk\Model\MFAKeyTypeLookupresponse[] userMfaTypeGet()
+> \Emnify\EmnifySdk\Model\MFAKeyTypeLookupresponse[] userMfaTypeGet()
 
 List MFA key types
 
@@ -397,11 +397,11 @@ Retrieve a list of possible MFA Key types.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\AuthenticationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -422,7 +422,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\MFAKeyTypeLookupresponse[]**](../Model/MFAKeyTypeLookupresponse.md)
+[**\Emnify\EmnifySdk\Model\MFAKeyTypeLookupresponse[]**](../Model/MFAKeyTypeLookupresponse.md)
 
 ### Authorization
 

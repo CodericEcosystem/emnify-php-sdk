@@ -1,4 +1,4 @@
-# CodericEcosystem\EmnifySdk\OperatorApi
+# Emnify\EmnifySdk\OperatorApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**operatorGet**](OperatorApi.md#operatorget) | **GET** /api/v1/operator | List Operators
 
 # **operatorGet**
-> \CodericEcosystem\EmnifySdk\Model\InlineResponse2002[] operatorGet()
+> \Emnify\EmnifySdk\Model\InlineResponse2002[] operatorGet()
 
 List Operators
 
@@ -18,11 +18,11 @@ Returns a collection of existing operators.  It will return an array of items wi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\OperatorApi(
+$apiInstance = new Emnify\EmnifySdk\Api\OperatorApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -43,7 +43,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\InlineResponse2002[]**](../Model/InlineResponse2002.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse2002[]**](../Model/InlineResponse2002.md)
 
 ### Authorization
 

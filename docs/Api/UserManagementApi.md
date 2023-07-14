@@ -1,4 +1,4 @@
-# CodericEcosystem\EmnifySdk\UserManagementApi
+# Emnify\EmnifySdk\UserManagementApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -30,11 +30,11 @@ Delete User by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -83,11 +83,11 @@ Delete User by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userByIdGet**
-> \CodericEcosystem\EmnifySdk\Model\RetrievetheUserresponse userByIdGet($user_id)
+> \Emnify\EmnifySdk\Model\RetrievetheUserresponse userByIdGet($user_id)
 
 Get User by ID or Username
 
@@ -136,11 +136,11 @@ Get a specific user by ID  provided the user is within this requesting user's or
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\RetrievetheUserresponse**](../Model/RetrievetheUserresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrievetheUserresponse**](../Model/RetrievetheUserresponse.md)
 
 ### Authorization
 
@@ -190,17 +190,17 @@ Provided fields * `username` (String optional) - has to be user's email * `name`
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\UpdateUserrequest(); // \CodericEcosystem\EmnifySdk\Model\UpdateUserrequest | 
+$body = new \Emnify\EmnifySdk\Model\UpdateUserrequest(); // \Emnify\EmnifySdk\Model\UpdateUserrequest | 
 $user_id = 1.2; // float | User ID
 
 try {
@@ -215,7 +215,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\UpdateUserrequest**](../Model/UpdateUserrequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\UpdateUserrequest**](../Model/UpdateUserrequest.md)|  |
  **user_id** | **float**| User ID |
 
 ### Return type
@@ -234,7 +234,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userByIdV2CreateSupportToken**
-> \CodericEcosystem\EmnifySdk\Model\UserByIdV2CreateSupportTokenRequest1 userByIdV2CreateSupportToken($user_id, $body)
+> \Emnify\EmnifySdk\Model\UserByIdV2CreateSupportTokenRequest1 userByIdV2CreateSupportToken($user_id, $body)
 
 Create support access token for given user
 
@@ -245,18 +245,18 @@ Create a bearer token that can be used to acces the portal as the target user. A
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $user_id = 1.2; // float | User ID
-$body = new \CodericEcosystem\EmnifySdk\Model\UserByIdV2CreateSupportTokenRequest(); // \CodericEcosystem\EmnifySdk\Model\UserByIdV2CreateSupportTokenRequest | 
+$body = new \Emnify\EmnifySdk\Model\UserByIdV2CreateSupportTokenRequest(); // \Emnify\EmnifySdk\Model\UserByIdV2CreateSupportTokenRequest | 
 
 try {
     $result = $apiInstance->userByIdV2CreateSupportToken($user_id, $body);
@@ -272,11 +272,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_id** | **float**| User ID |
- **body** | [**\CodericEcosystem\EmnifySdk\Model\UserByIdV2CreateSupportTokenRequest**](../Model/UserByIdV2CreateSupportTokenRequest.md)|  | [optional]
+ **body** | [**\Emnify\EmnifySdk\Model\UserByIdV2CreateSupportTokenRequest**](../Model/UserByIdV2CreateSupportTokenRequest.md)|  | [optional]
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\UserByIdV2CreateSupportTokenRequest1**](../Model/UserByIdV2CreateSupportTokenRequest1.md)
+[**\Emnify\EmnifySdk\Model\UserByIdV2CreateSupportTokenRequest1**](../Model/UserByIdV2CreateSupportTokenRequest1.md)
 
 ### Authorization
 
@@ -290,7 +290,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userEventPagePerPageSortByUserIdAndQGet**
-> \CodericEcosystem\EmnifySdk\Model\RetrieveEventsresponse4[] userEventPagePerPageSortByUserIdAndQGet($user_id, $page, $per_page, $sort, $q)
+> \Emnify\EmnifySdk\Model\RetrieveEventsresponse4[] userEventPagePerPageSortByUserIdAndQGet($user_id, $page, $per_page, $sort, $q)
 
 List User Events
 
@@ -301,11 +301,11 @@ Returns the list of events, filtered, sorted and paged according to query parame
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -338,7 +338,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\RetrieveEventsresponse4[]**](../Model/RetrieveEventsresponse4.md)
+[**\Emnify\EmnifySdk\Model\RetrieveEventsresponse4[]**](../Model/RetrieveEventsresponse4.md)
 
 ### Authorization
 
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userPerPageSortByQAndPageGet**
-> \CodericEcosystem\EmnifySdk\Model\User[] userPerPageSortByQAndPageGet($page, $q, $per_page, $sort)
+> \Emnify\EmnifySdk\Model\User[] userPerPageSortByQAndPageGet($page, $q, $per_page, $sort)
 
 List User Accounts
 
@@ -363,11 +363,11 @@ Retrieves the collection of user accounts, filtered, sorted and paged accourding
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -398,7 +398,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\User[]**](../Model/User.md)
+[**\Emnify\EmnifySdk\Model\User[]**](../Model/User.md)
 
 ### Authorization
 
@@ -423,17 +423,17 @@ Creates a user which is *not active and has no password assigned*. The URL to ge
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\CreateUserrequest(); // \CodericEcosystem\EmnifySdk\Model\CreateUserrequest | 
+$body = new \Emnify\EmnifySdk\Model\CreateUserrequest(); // \Emnify\EmnifySdk\Model\CreateUserrequest | 
 
 try {
     $apiInstance->userPerPageSortByQAndPagePost($body);
@@ -447,7 +447,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\CreateUserrequest**](../Model/CreateUserrequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\CreateUserrequest**](../Model/CreateUserrequest.md)|  |
 
 ### Return type
 
@@ -476,11 +476,11 @@ Release a Role from association with this user.  Note that a Role can only be re
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -531,11 +531,11 @@ Role is assigned to this user.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -575,7 +575,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userRoleGet**
-> \CodericEcosystem\EmnifySdk\Model\InlineResponse2005[] userRoleGet()
+> \Emnify\EmnifySdk\Model\InlineResponse2005[] userRoleGet()
 
 List User Roles
 
@@ -586,11 +586,11 @@ Retrieves the collection of available user roles
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -611,7 +611,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\InlineResponse2005[]**](../Model/InlineResponse2005.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse2005[]**](../Model/InlineResponse2005.md)
 
 ### Authorization
 
@@ -636,11 +636,11 @@ Role permissions available to this user.  Only an administrator or observer is a
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -679,7 +679,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **userStatusGet**
-> \CodericEcosystem\EmnifySdk\Model\RetrieveAvailableUserStatusesresponse[] userStatusGet()
+> \Emnify\EmnifySdk\Model\RetrieveAvailableUserStatusesresponse[] userStatusGet()
 
 List User Statuses
 
@@ -690,11 +690,11 @@ Provides the list of available user status (lookup).
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\UserManagementApi(
+$apiInstance = new Emnify\EmnifySdk\Api\UserManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -715,7 +715,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\RetrieveAvailableUserStatusesresponse[]**](../Model/RetrieveAvailableUserStatusesresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveAvailableUserStatusesresponse[]**](../Model/RetrieveAvailableUserStatusesresponse.md)
 
 ### Authorization
 

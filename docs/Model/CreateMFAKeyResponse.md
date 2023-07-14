@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **float** |  | [optional] 
-**status** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1cncbreakoutStatus**](Apiv1cncbreakoutStatus.md) |  | [optional] 
-**type** | [**\CodericEcosystem\EmnifySdk\Model\Apiv1cncbreakoutStatus**](Apiv1cncbreakoutStatus.md) |  | [optional] 
+**status** | [**\Emnify\EmnifySdk\Model\Apiv1cncbreakoutStatus**](Apiv1cncbreakoutStatus.md) |  | [optional] 
+**type** | [**\Emnify\EmnifySdk\Model\Apiv1cncbreakoutStatus**](Apiv1cncbreakoutStatus.md) |  | [optional] 
 **secret_key** | **string** |  | [optional] 
 **otpauth** | **string** |  | [optional] 
 **creation_date** | **string** |  | [optional] 

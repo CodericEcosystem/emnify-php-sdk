@@ -1,4 +1,4 @@
-# CodericEcosystem\EmnifySdk\EndpointApi
+# Emnify\EmnifySdk\EndpointApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -45,17 +45,17 @@ If a `sim` object is provided, the SIM with the contained ID will be assigned to
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\Endpoint1(); // \CodericEcosystem\EmnifySdk\Model\Endpoint1 | 
+$body = new \Emnify\EmnifySdk\Model\Endpoint1(); // \Emnify\EmnifySdk\Model\Endpoint1 | 
 
 try {
     $apiInstance->createEndpoint($body);
@@ -69,7 +69,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\Endpoint1**](../Model/Endpoint1.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\Endpoint1**](../Model/Endpoint1.md)|  |
 
 ### Return type
 
@@ -98,11 +98,11 @@ Will delete the data quota for the endpoint, if any is set. Note that if `apply_
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -151,11 +151,11 @@ Will delete the SMS quota for the endpoint, if any is set. Note that if `apply_s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -204,11 +204,11 @@ Reset Prepaid Balance
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -246,7 +246,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointBalanceByEndpointIdGet**
-> \CodericEcosystem\EmnifySdk\Model\RetrievePrepaidBalanceresponse endpointBalanceByEndpointIdGet($endpoint_id)
+> \Emnify\EmnifySdk\Model\RetrievePrepaidBalanceresponse endpointBalanceByEndpointIdGet($endpoint_id)
 
 Endpoint Prepaid Balance
 
@@ -257,11 +257,11 @@ Endpoint Prepaid Balance
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -286,7 +286,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\RetrievePrepaidBalanceresponse**](../Model/RetrievePrepaidBalanceresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrievePrepaidBalanceresponse**](../Model/RetrievePrepaidBalanceresponse.md)
 
 ### Authorization
 
@@ -311,18 +311,18 @@ Update Prepaid Balance
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $endpoint_id = 56; // int | Numeric ID of an endpoint
-$body = new \CodericEcosystem\EmnifySdk\Model\UpdatePrepaidBalanceresponse(); // \CodericEcosystem\EmnifySdk\Model\UpdatePrepaidBalanceresponse | 
+$body = new \Emnify\EmnifySdk\Model\UpdatePrepaidBalanceresponse(); // \Emnify\EmnifySdk\Model\UpdatePrepaidBalanceresponse | 
 
 try {
     $apiInstance->endpointBalanceByEndpointIdPost($endpoint_id, $body);
@@ -337,7 +337,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **endpoint_id** | **int**| Numeric ID of an endpoint |
- **body** | [**\CodericEcosystem\EmnifySdk\Model\UpdatePrepaidBalanceresponse**](../Model/UpdatePrepaidBalanceresponse.md)|  | [optional]
+ **body** | [**\Emnify\EmnifySdk\Model\UpdatePrepaidBalanceresponse**](../Model/UpdatePrepaidBalanceresponse.md)|  | [optional]
 
 ### Return type
 
@@ -366,11 +366,11 @@ Deletes an endpoint and all its child entities.  _Note: Endpoints with an assign
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -408,7 +408,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointByIdGet**
-> \CodericEcosystem\EmnifySdk\Model\Endpoint2 endpointByIdGet($endpoint_id)
+> \Emnify\EmnifySdk\Model\Endpoint2 endpointByIdGet($endpoint_id)
 
 Endpoint Details
 
@@ -419,11 +419,11 @@ Retrieves endpoint details for a given ID.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -448,7 +448,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\Endpoint2**](../Model/Endpoint2.md)
+[**\Emnify\EmnifySdk\Model\Endpoint2**](../Model/Endpoint2.md)
 
 ### Authorization
 
@@ -473,17 +473,17 @@ Updates the details of an endpoint.  You can provide the following fields with t
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\UpdateEndpoint(); // \CodericEcosystem\EmnifySdk\Model\UpdateEndpoint | 
+$body = new \Emnify\EmnifySdk\Model\UpdateEndpoint(); // \Emnify\EmnifySdk\Model\UpdateEndpoint | 
 $endpoint_id = 56; // int | Numeric ID of an endpoint
 
 try {
@@ -498,7 +498,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\UpdateEndpoint**](../Model/UpdateEndpoint.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\UpdateEndpoint**](../Model/UpdateEndpoint.md)|  |
  **endpoint_id** | **int**| Numeric ID of an endpoint |
 
 ### Return type
@@ -517,7 +517,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointConnectivityByIdGet**
-> \CodericEcosystem\EmnifySdk\Model\RetrieveEndpointConnectivityStatusresponse endpointConnectivityByIdGet($endpoint_id)
+> \Emnify\EmnifySdk\Model\RetrieveEndpointConnectivityStatusresponse endpointConnectivityByIdGet($endpoint_id)
 
 Endpoint Connectivity Status
 
@@ -528,11 +528,11 @@ Retrieve details about current connectivity status of endpoint. The following is
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -557,7 +557,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\RetrieveEndpointConnectivityStatusresponse**](../Model/RetrieveEndpointConnectivityStatusresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveEndpointConnectivityStatusresponse**](../Model/RetrieveEndpointConnectivityStatusresponse.md)
 
 ### Authorization
 
@@ -571,7 +571,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointEventsByID**
-> \CodericEcosystem\EmnifySdk\Model\RetrieveEventsresponse endpointEventsByID($endpoint_id, $page, $per_page, $sort, $q)
+> \Emnify\EmnifySdk\Model\RetrieveEventsresponse endpointEventsByID($endpoint_id, $page, $per_page, $sort, $q)
 
 List Endpoint events
 
@@ -582,11 +582,11 @@ Returns the list of events, filtered, sorted and paged according to query parame
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -619,7 +619,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\RetrieveEventsresponse**](../Model/RetrieveEventsresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveEventsresponse**](../Model/RetrieveEventsresponse.md)
 
 ### Authorization
 
@@ -633,7 +633,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointOperatorBlacklistByEndpointIdGet**
-> \CodericEcosystem\EmnifySdk\Model\RetrieveOperatorBlacklistresponse[] endpointOperatorBlacklistByEndpointIdGet($endpoint_id)
+> \Emnify\EmnifySdk\Model\RetrieveOperatorBlacklistresponse[] endpointOperatorBlacklistByEndpointIdGet($endpoint_id)
 
 List Operator Blacklist for Endpoint
 
@@ -644,11 +644,11 @@ Returns a list of blacklisted Operators for the requested Endpoint
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -673,7 +673,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\RetrieveOperatorBlacklistresponse[]**](../Model/RetrieveOperatorBlacklistresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveOperatorBlacklistresponse[]**](../Model/RetrieveOperatorBlacklistresponse.md)
 
 ### Authorization
 
@@ -698,11 +698,11 @@ Remove Operator from the Blacklist of an Endpoint.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -753,11 +753,11 @@ Adds an Operator to the Blacklist of an Endpoint.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -797,7 +797,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointQuotaDataByEndpointIdGet**
-> \CodericEcosystem\EmnifySdk\Model\EndpointQuota endpointQuotaDataByEndpointIdGet($endpoint_id)
+> \Emnify\EmnifySdk\Model\EndpointQuota endpointQuotaDataByEndpointIdGet($endpoint_id)
 
 Retrieve Data Quota details
 
@@ -808,11 +808,11 @@ Returns details about the assigned Data Quota for an endpoint. * `status`: this 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -837,7 +837,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\EndpointQuota**](../Model/EndpointQuota.md)
+[**\Emnify\EmnifySdk\Model\EndpointQuota**](../Model/EndpointQuota.md)
 
 ### Authorization
 
@@ -862,17 +862,17 @@ At any time, a new data quota can be set for an endpoint. At an initial state wh
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\EndpointQuota1(); // \CodericEcosystem\EmnifySdk\Model\EndpointQuota1 | 
+$body = new \Emnify\EmnifySdk\Model\EndpointQuota1(); // \Emnify\EmnifySdk\Model\EndpointQuota1 | 
 $endpoint_id = 56; // int | Numeric ID of an endpoint
 
 try {
@@ -887,7 +887,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\EndpointQuota1**](../Model/EndpointQuota1.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\EndpointQuota1**](../Model/EndpointQuota1.md)|  |
  **endpoint_id** | **int**| Numeric ID of an endpoint |
 
 ### Return type
@@ -917,11 +917,11 @@ Returns details about the assigned SMS Quota for an endpoint.  You can retrieve 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -970,17 +970,17 @@ At any time, a new SMS quota can be set for an endpoint. At an initial state whe
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\SMSQuota(); // \CodericEcosystem\EmnifySdk\Model\SMSQuota | 
+$body = new \Emnify\EmnifySdk\Model\SMSQuota(); // \Emnify\EmnifySdk\Model\SMSQuota | 
 $endpoint_id = 56; // int | Numeric ID of an endpoint
 
 try {
@@ -995,7 +995,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\SMSQuota**](../Model/SMSQuota.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\SMSQuota**](../Model/SMSQuota.md)|  |
  **endpoint_id** | **int**| Numeric ID of an endpoint |
 
 ### Return type
@@ -1025,11 +1025,11 @@ Cancel SMS that is buffered for endpoint and not yet delivered.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1069,7 +1069,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointSmsByEndpointIdAndSmsIdGet**
-> \CodericEcosystem\EmnifySdk\Model\GetdetailsofSMSresponse endpointSmsByEndpointIdAndSmsIdGet($endpoint_id, $sms_id)
+> \Emnify\EmnifySdk\Model\GetdetailsofSMSresponse endpointSmsByEndpointIdAndSmsIdGet($endpoint_id, $sms_id)
 
 SMS details
 
@@ -1080,11 +1080,11 @@ Returns details about an Endpoint SMS by SMS ID.  A description of the SMS statu
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1111,7 +1111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\GetdetailsofSMSresponse**](../Model/GetdetailsofSMSresponse.md)
+[**\Emnify\EmnifySdk\Model\GetdetailsofSMSresponse**](../Model/GetdetailsofSMSresponse.md)
 
 ### Authorization
 
@@ -1125,7 +1125,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointSmsByIdGet**
-> \CodericEcosystem\EmnifySdk\Model\ListofSMSresponse[] endpointSmsByIdGet($endpoint_id)
+> \Emnify\EmnifySdk\Model\ListofSMSresponse[] endpointSmsByIdGet($endpoint_id)
 
 List sent and received SMS
 
@@ -1136,11 +1136,11 @@ Returns the list of SMS sent and received by this endpoint.  A description of th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1165,7 +1165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\ListofSMSresponse[]**](../Model/ListofSMSresponse.md)
+[**\Emnify\EmnifySdk\Model\ListofSMSresponse[]**](../Model/ListofSMSresponse.md)
 
 ### Authorization
 
@@ -1190,17 +1190,17 @@ Submit MT-SMS to specified endpoint.  You can provide following fields with this
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\SubmitMTSMSrequest(); // \CodericEcosystem\EmnifySdk\Model\SubmitMTSMSrequest | 
+$body = new \Emnify\EmnifySdk\Model\SubmitMTSMSrequest(); // \Emnify\EmnifySdk\Model\SubmitMTSMSrequest | 
 $endpoint_id = 56; // int | Numeric ID of an endpoint
 
 try {
@@ -1215,7 +1215,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\SubmitMTSMSrequest**](../Model/SubmitMTSMSrequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\SubmitMTSMSrequest**](../Model/SubmitMTSMSrequest.md)|  |
  **endpoint_id** | **int**| Numeric ID of an endpoint |
 
 ### Return type
@@ -1234,7 +1234,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointStatsByIdGet**
-> \CodericEcosystem\EmnifySdk\Model\RetrieveEndpointStatisticsresponse endpointStatsByIdGet($endpoint_id)
+> \Emnify\EmnifySdk\Model\RetrieveEndpointStatisticsresponse endpointStatsByIdGet($endpoint_id)
 
 Endpoint Usage and Cost Statistics
 
@@ -1245,11 +1245,11 @@ Endpoint Usage and Cost Statistics
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1274,7 +1274,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\RetrieveEndpointStatisticsresponse**](../Model/RetrieveEndpointStatisticsresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveEndpointStatisticsresponse**](../Model/RetrieveEndpointStatisticsresponse.md)
 
 ### Authorization
 
@@ -1299,11 +1299,11 @@ Daily Endpoint Usage Statistics
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1345,7 +1345,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointStatusGet**
-> \CodericEcosystem\EmnifySdk\Model\Status[] endpointStatusGet()
+> \Emnify\EmnifySdk\Model\Status[] endpointStatusGet()
 
 List Endpoint Statuses
 
@@ -1356,11 +1356,11 @@ Returns a list of available Endpoint Statuses
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1381,7 +1381,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\Status[]**](../Model/Status.md)
+[**\Emnify\EmnifySdk\Model\Status[]**](../Model/Status.md)
 
 ### Authorization
 
@@ -1395,7 +1395,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getConnectivityInfoByEndpointId**
-> \CodericEcosystem\EmnifySdk\Model\RetrieveConnectivityInformationresponse getConnectivityInfoByEndpointId($endpoint_id, $subscriber, $ussd)
+> \Emnify\EmnifySdk\Model\RetrieveConnectivityInformationresponse getConnectivityInfoByEndpointId($endpoint_id, $subscriber, $ussd)
 
 Connectivity Info of an Endpoint
 
@@ -1406,11 +1406,11 @@ Returns the connectivity information for the specified endpoint by ID.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1439,7 +1439,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\RetrieveConnectivityInformationresponse**](../Model/RetrieveConnectivityInformationresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveConnectivityInformationresponse**](../Model/RetrieveConnectivityInformationresponse.md)
 
 ### Authorization
 
@@ -1453,7 +1453,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEndpoints**
-> \CodericEcosystem\EmnifySdk\Model\Endpoint[] getEndpoints($q, $sort, $page, $per_page)
+> \Emnify\EmnifySdk\Model\Endpoint[] getEndpoints($q, $sort, $page, $per_page)
 
 List Endpoints
 
@@ -1464,11 +1464,11 @@ Returns a list of endpoints filtered, sorted, and paged according to query param
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1499,7 +1499,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\Endpoint[]**](../Model/Endpoint.md)
+[**\Emnify\EmnifySdk\Model\Endpoint[]**](../Model/Endpoint.md)
 
 ### Authorization
 
@@ -1524,18 +1524,18 @@ Dispatch a message that causes either a `Cancel Location` or `Delete PDP Context
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\EndpointApi(
+$apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $endpoint_id = 56; // int | Numeric ID of an endpoint
-$body = new \CodericEcosystem\EmnifySdk\Model\UpdateEndpointConnectivityByIdRequest(); // \CodericEcosystem\EmnifySdk\Model\UpdateEndpointConnectivityByIdRequest | 
+$body = new \Emnify\EmnifySdk\Model\UpdateEndpointConnectivityByIdRequest(); // \Emnify\EmnifySdk\Model\UpdateEndpointConnectivityByIdRequest | 
 
 try {
     $apiInstance->updateEndpointConnectivityById($endpoint_id, $body);
@@ -1550,7 +1550,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **endpoint_id** | **int**| Numeric ID of an endpoint |
- **body** | [**\CodericEcosystem\EmnifySdk\Model\UpdateEndpointConnectivityByIdRequest**](../Model/UpdateEndpointConnectivityByIdRequest.md)|  | [optional]
+ **body** | [**\Emnify\EmnifySdk\Model\UpdateEndpointConnectivityByIdRequest**](../Model/UpdateEndpointConnectivityByIdRequest.md)|  | [optional]
 
 ### Return type
 

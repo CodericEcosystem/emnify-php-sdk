@@ -1,4 +1,4 @@
-# CodericEcosystem\EmnifySdk\SIMApi
+# Emnify\EmnifySdk\SIMApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 [**validateSIMBatchByBIC**](SIMApi.md#validatesimbatchbybic) | **GET** /api/v1/sim_batch/bic/{bic} | Validate if a given batch can be registered by BIC
 
 # **getEsimInstallationCode**
-> \CodericEcosystem\EmnifySdk\Model\ESIMInstallationCodeInJSONFormat getEsimInstallationCode($sim_id)
+> \Emnify\EmnifySdk\Model\ESIMInstallationCodeInJSONFormat getEsimInstallationCode($sim_id)
 
 Get the code to install an eSIM
 
@@ -28,11 +28,11 @@ Returns the installation code for the specified eSIM assigned to the logged-in o
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\ESIMInstallationCodeInJSONFormat**](../Model/ESIMInstallationCodeInJSONFormat.md)
+[**\Emnify\EmnifySdk\Model\ESIMInstallationCodeInJSONFormat**](../Model/ESIMInstallationCodeInJSONFormat.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **registerSIMBatchByBIC**
-> \CodericEcosystem\EmnifySdk\Model\SuccessfulBatchActivation registerSIMBatchByBIC($bic, $body)
+> \Emnify\EmnifySdk\Model\SuccessfulBatchActivation registerSIMBatchByBIC($bic, $body)
 
 Register a given batch by BIC
 
@@ -82,18 +82,18 @@ Registers the given SIM batch, assigns all SIMs to the organisation, and sets th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $bic = "bic_example"; // string | The bic of the sim batch
-$body = new \CodericEcosystem\EmnifySdk\Model\ActivateBatch(); // \CodericEcosystem\EmnifySdk\Model\ActivateBatch | 
+$body = new \Emnify\EmnifySdk\Model\ActivateBatch(); // \Emnify\EmnifySdk\Model\ActivateBatch | 
 
 try {
     $result = $apiInstance->registerSIMBatchByBIC($bic, $body);
@@ -109,11 +109,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **bic** | **string**| The bic of the sim batch |
- **body** | [**\CodericEcosystem\EmnifySdk\Model\ActivateBatch**](../Model/ActivateBatch.md)|  | [optional]
+ **body** | [**\Emnify\EmnifySdk\Model\ActivateBatch**](../Model/ActivateBatch.md)|  | [optional]
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\SuccessfulBatchActivation**](../Model/SuccessfulBatchActivation.md)
+[**\Emnify\EmnifySdk\Model\SuccessfulBatchActivation**](../Model/SuccessfulBatchActivation.md)
 
 ### Authorization
 
@@ -138,11 +138,11 @@ Daily SIM Usage Statistics
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -195,11 +195,11 @@ Delete a SIM
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -237,7 +237,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **simByIdGet**
-> \CodericEcosystem\EmnifySdk\Model\SimEntry1 simByIdGet($sim_id)
+> \Emnify\EmnifySdk\Model\SimEntry1 simByIdGet($sim_id)
 
 SIM Details
 
@@ -248,11 +248,11 @@ Retrieves SIM details for a given ID.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -277,7 +277,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\SimEntry1**](../Model/SimEntry1.md)
+[**\Emnify\EmnifySdk\Model\SimEntry1**](../Model/SimEntry1.md)
 
 ### Authorization
 
@@ -302,17 +302,17 @@ Updates a SIM resource.  You can provide the following fields with this request:
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \CodericEcosystem\EmnifySdk\Model\UpdateSIM(); // \CodericEcosystem\EmnifySdk\Model\UpdateSIM | 
+$body = new \Emnify\EmnifySdk\Model\UpdateSIM(); // \Emnify\EmnifySdk\Model\UpdateSIM | 
 $sim_id = 56; // int | Numeric ID of a SIM
 
 try {
@@ -327,7 +327,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\CodericEcosystem\EmnifySdk\Model\UpdateSIM**](../Model/UpdateSIM.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\UpdateSIM**](../Model/UpdateSIM.md)|  |
  **sim_id** | **int**| Numeric ID of a SIM |
 
 ### Return type
@@ -346,7 +346,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **simEventPagePerPageSortBySimIdAndQGet**
-> \CodericEcosystem\EmnifySdk\Model\RetrieveEventsresponse[] simEventPagePerPageSortBySimIdAndQGet($sim_id, $page, $per_page, $sort, $q)
+> \Emnify\EmnifySdk\Model\RetrieveEventsresponse[] simEventPagePerPageSortBySimIdAndQGet($sim_id, $page, $per_page, $sort, $q)
 
 List SIM Events
 
@@ -357,11 +357,11 @@ Returns the list of events, filtered, sorted and paged according to query parame
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -394,7 +394,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\RetrieveEventsresponse[]**](../Model/RetrieveEventsresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveEventsresponse[]**](../Model/RetrieveEventsresponse.md)
 
 ### Authorization
 
@@ -408,7 +408,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **simPerPageSortByQAndPageGet**
-> \CodericEcosystem\EmnifySdk\Model\SimEntry[] simPerPageSortByQAndPageGet($page, $per_page, $q, $sort)
+> \Emnify\EmnifySdk\Model\SimEntry[] simPerPageSortByQAndPageGet($page, $per_page, $q, $sort)
 
 List SIMs
 
@@ -419,11 +419,11 @@ Returns a list of SIMs filtered, sorted, and paged according to query parameters
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -454,7 +454,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\SimEntry[]**](../Model/SimEntry.md)
+[**\Emnify\EmnifySdk\Model\SimEntry[]**](../Model/SimEntry.md)
 
 ### Authorization
 
@@ -468,7 +468,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **simStatsByIdGet**
-> \CodericEcosystem\EmnifySdk\Model\ResponseSchemaForSIMStatistics[] simStatsByIdGet($sim_id)
+> \Emnify\EmnifySdk\Model\ResponseSchemaForSIMStatistics[] simStatsByIdGet($sim_id)
 
 SIM Usage and Cost Statistics
 
@@ -479,11 +479,11 @@ SIM Usage and Cost Statistics
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -508,7 +508,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\ResponseSchemaForSIMStatistics[]**](../Model/ResponseSchemaForSIMStatistics.md)
+[**\Emnify\EmnifySdk\Model\ResponseSchemaForSIMStatistics[]**](../Model/ResponseSchemaForSIMStatistics.md)
 
 ### Authorization
 
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **simStatusGet**
-> \CodericEcosystem\EmnifySdk\Model\ListofAllAvailableSIMStatusesresponse[] simStatusGet()
+> \Emnify\EmnifySdk\Model\ListofAllAvailableSIMStatusesresponse[] simStatusGet()
 
 List SIM Statuses
 
@@ -533,11 +533,11 @@ Returns a list of available [SIM statuses](sim.html#sim-status-object).
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -558,7 +558,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\ListofAllAvailableSIMStatusesresponse[]**](../Model/ListofAllAvailableSIMStatusesresponse.md)
+[**\Emnify\EmnifySdk\Model\ListofAllAvailableSIMStatusesresponse[]**](../Model/ListofAllAvailableSIMStatusesresponse.md)
 
 ### Authorization
 
@@ -572,7 +572,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **validateSIMBatchByBIC**
-> \CodericEcosystem\EmnifySdk\Model\ResponseOfActivatableSIMBatch validateSIMBatchByBIC($bic)
+> \Emnify\EmnifySdk\Model\ResponseOfActivatableSIMBatch validateSIMBatchByBIC($bic)
 
 Validate if a given batch can be registered by BIC
 
@@ -583,11 +583,11 @@ Checks the given BIC code and the contained SIMs if they can be registered.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = CodericEcosystem\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new CodericEcosystem\EmnifySdk\Api\SIMApi(
+$apiInstance = new Emnify\EmnifySdk\Api\SIMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -612,7 +612,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\CodericEcosystem\EmnifySdk\Model\ResponseOfActivatableSIMBatch**](../Model/ResponseOfActivatableSIMBatch.md)
+[**\Emnify\EmnifySdk\Model\ResponseOfActivatableSIMBatch**](../Model/ResponseOfActivatableSIMBatch.md)
 
 ### Authorization
 
