@@ -33,5 +33,8 @@
     },
     "autoload-dev": {
         "psr-4": { "CodericEcosystem\\EmnifySdk\\" : "test/" }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit test"
     }
 }
