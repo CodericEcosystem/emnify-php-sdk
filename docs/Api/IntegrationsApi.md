@@ -1,4 +1,4 @@
-# Swagger\Client\IntegrationsApi
+# Emnify\EmnifySdk\IntegrationsApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -34,17 +34,17 @@ Creates a new secret that may be used by API callbacks.  When an `api_secret` is
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\V1ApiSecretBody(); // \Swagger\Client\Model\V1ApiSecretBody | 
+$body = new \Emnify\EmnifySdk\Model\V1ApiSecretBody(); // \Emnify\EmnifySdk\Model\V1ApiSecretBody | 
 
 try {
     $apiInstance->createCallbackSecret($body);
@@ -58,7 +58,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\V1ApiSecretBody**](../Model/V1ApiSecretBody.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\V1ApiSecretBody**](../Model/V1ApiSecretBody.md)|  |
 
 ### Return type
 
@@ -87,17 +87,17 @@ Create Callback URL
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\null(); //  | Creating an API callback URL
+$body = new \Emnify\EmnifySdk\Model\null(); //  | Creating an API callback URL
 
 try {
     $apiInstance->createCallbackURL($body);
@@ -140,17 +140,17 @@ Create Data Stream to your destination. Click on Examples to see available Data 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\V2DataStreamBody(); // \Swagger\Client\Model\V2DataStreamBody | 
+$body = new \Emnify\EmnifySdk\Model\V2DataStreamBody(); // \Emnify\EmnifySdk\Model\V2DataStreamBody | 
 
 try {
     $apiInstance->createDataStreamer($body);
@@ -164,7 +164,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\V2DataStreamBody**](../Model/V2DataStreamBody.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\V2DataStreamBody**](../Model/V2DataStreamBody.md)|  |
 
 ### Return type
 
@@ -193,11 +193,11 @@ Restart your Existing Data Stream. This might be necessary when e.g. your Webhoo
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -244,11 +244,11 @@ Delete a Callback Secret
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -295,11 +295,11 @@ Delete a Callback URL
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -346,11 +346,11 @@ Delete Existing Data Stream
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -388,7 +388,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAPICallbackSecret**
-> \Swagger\Client\Model\InlineResponse2009[] getAPICallbackSecret()
+> \Emnify\EmnifySdk\Model\InlineResponse2009[] getAPICallbackSecret()
 
 List API Callback Secrets
 
@@ -399,11 +399,11 @@ Lists API callback secrets.  __Note:__ The `secret` property itself is not retur
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -424,7 +424,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2009[]**](../Model/InlineResponse2009.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse2009[]**](../Model/InlineResponse2009.md)
 
 ### Authorization
 
@@ -447,11 +447,11 @@ Retrieve list of API Callback URLs
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -486,7 +486,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCallbackSecretbyID**
-> \Swagger\Client\Model\V1ApiSecretBody getCallbackSecretbyID($api_secret_id)
+> \Emnify\EmnifySdk\Model\V1ApiSecretBody getCallbackSecretbyID($api_secret_id)
 
 Get a Callback Secret by ID
 
@@ -495,11 +495,11 @@ Get a Callback Secret by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -524,7 +524,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\V1ApiSecretBody**](../Model/V1ApiSecretBody.md)
+[**\Emnify\EmnifySdk\Model\V1ApiSecretBody**](../Model/V1ApiSecretBody.md)
 
 ### Authorization
 
@@ -547,11 +547,11 @@ Get a Callback URL by ID
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -589,7 +589,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDataStreamerByIdV2**
-> \Swagger\Client\Model\InlineResponse2008 getDataStreamerByIdV2($data_stream_id)
+> \Emnify\EmnifySdk\Model\InlineResponse2008 getDataStreamerByIdV2($data_stream_id)
 
 Get Details on Existing Data Stream
 
@@ -598,11 +598,11 @@ Get Details on Existing Data Stream
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -627,7 +627,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
 
 ### Authorization
 
@@ -641,7 +641,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDataStreamerDataStreamType**
-> \Swagger\Client\Model\InlineResponse2007[] getDataStreamerDataStreamType()
+> \Emnify\EmnifySdk\Model\InlineResponse2007[] getDataStreamerDataStreamType()
 
 Get Data Stream Types
 
@@ -652,11 +652,11 @@ List available Data Stream Types.  (`1`) will only stream `Usage` Data.  (`2`) w
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -677,7 +677,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2007[]**](../Model/InlineResponse2007.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse2007[]**](../Model/InlineResponse2007.md)
 
 ### Authorization
 
@@ -691,7 +691,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDataStreamerEnumFilterFieldType**
-> \Swagger\Client\Model\InlineResponse2007[] getDataStreamerEnumFilterFieldType()
+> \Emnify\EmnifySdk\Model\InlineResponse2007[] getDataStreamerEnumFilterFieldType()
 
 Get Possible Data Stream Filter Fields
 
@@ -700,11 +700,11 @@ Get Possible Data Stream Filter Fields
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -725,7 +725,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2007[]**](../Model/InlineResponse2007.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse2007[]**](../Model/InlineResponse2007.md)
 
 ### Authorization
 
@@ -739,7 +739,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDataStreamerStatuses**
-> \Swagger\Client\Model\InlineResponse2007[] getDataStreamerStatuses()
+> \Emnify\EmnifySdk\Model\InlineResponse2007[] getDataStreamerStatuses()
 
 Get Possible Data Stream Statuses
 
@@ -750,11 +750,11 @@ List Possible Data Stream Statuses.  (`1`) is the normal `Running` state meaning
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -775,7 +775,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2007[]**](../Model/InlineResponse2007.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse2007[]**](../Model/InlineResponse2007.md)
 
 ### Authorization
 
@@ -789,7 +789,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listDataStreamerV2s**
-> \Swagger\Client\Model\InlineResponse2006 listDataStreamerV2s()
+> \Emnify\EmnifySdk\Model\InlineResponse2006 listDataStreamerV2s()
 
 List Data Stream configurations of your organization
 
@@ -798,11 +798,11 @@ List Data Stream configurations of your organization
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -823,7 +823,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
 
 ### Authorization
 
@@ -846,17 +846,17 @@ Modify Existing Data Stream
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\IntegrationsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\IntegrationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\DataStreamDataStreamIdBody(); // \Swagger\Client\Model\DataStreamDataStreamIdBody | 
+$body = new \Emnify\EmnifySdk\Model\DataStreamDataStreamIdBody(); // \Emnify\EmnifySdk\Model\DataStreamDataStreamIdBody | 
 $data_stream_id = "data_stream_id_example"; // string | ID of a data stream.
 
 try {
@@ -871,7 +871,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\DataStreamDataStreamIdBody**](../Model/DataStreamDataStreamIdBody.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\DataStreamDataStreamIdBody**](../Model/DataStreamDataStreamIdBody.md)|  |
  **data_stream_id** | **string**| ID of a data stream. |
 
 ### Return type

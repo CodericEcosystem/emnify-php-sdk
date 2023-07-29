@@ -1,4 +1,4 @@
-# Swagger\Client\TariffProfilesApi
+# Emnify\EmnifySdk\TariffProfilesApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -27,11 +27,11 @@ Deletes tariff profile. Tariff profiles used by an endpoint (`used_count` > 0) c
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TariffProfilesApi(
+$apiInstance = new Emnify\EmnifySdk\Api\TariffProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -69,7 +69,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **tariffProfileByIdGet**
-> \Swagger\Client\Model\TariffProfile2 tariffProfileByIdGet($tariff_profile_id)
+> \Emnify\EmnifySdk\Model\TariffProfile2 tariffProfileByIdGet($tariff_profile_id)
 
 Tariff Profile Details
 
@@ -80,11 +80,11 @@ Returns tariff profile specified by id. This tariff profile also contains inform
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TariffProfilesApi(
+$apiInstance = new Emnify\EmnifySdk\Api\TariffProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TariffProfile2**](../Model/TariffProfile2.md)
+[**\Emnify\EmnifySdk\Model\TariffProfile2**](../Model/TariffProfile2.md)
 
 ### Authorization
 
@@ -134,17 +134,17 @@ Patch the specified tariff profile.  You can provide following fields with this 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TariffProfilesApi(
+$apiInstance = new Emnify\EmnifySdk\Api\TariffProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\PatchTariffProfilerequest(); // \Swagger\Client\Model\PatchTariffProfilerequest | 
+$body = new \Emnify\EmnifySdk\Model\PatchTariffProfilerequest(); // \Emnify\EmnifySdk\Model\PatchTariffProfilerequest | 
 $tariff_profile_id = 1.2; // float | The numeric ID of a Tariff Profile
 
 try {
@@ -159,7 +159,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\PatchTariffProfilerequest**](../Model/PatchTariffProfilerequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\PatchTariffProfilerequest**](../Model/PatchTariffProfilerequest.md)|  |
  **tariff_profile_id** | **float**| The numeric ID of a Tariff Profile |
 
 ### Return type
@@ -178,7 +178,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **tariffProfileCoverageByTpIdGet**
-> \Swagger\Client\Model\RetrieveCoverageresponse[] tariffProfileCoverageByTpIdGet($tariff_profile_id)
+> \Emnify\EmnifySdk\Model\RetrieveCoverageresponse[] tariffProfileCoverageByTpIdGet($tariff_profile_id)
 
 List Tariff Profile Coverage
 
@@ -189,11 +189,11 @@ Provides the list of countries where that tariff profile can be used.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TariffProfilesApi(
+$apiInstance = new Emnify\EmnifySdk\Api\TariffProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -218,7 +218,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveCoverageresponse[]**](../Model/RetrieveCoverageresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveCoverageresponse[]**](../Model/RetrieveCoverageresponse.md)
 
 ### Authorization
 
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **tariffProfileGet**
-> \Swagger\Client\Model\TariffProfile1[] tariffProfileGet()
+> \Emnify\EmnifySdk\Model\TariffProfile1[] tariffProfileGet()
 
 List Tariff Profiles
 
@@ -243,11 +243,11 @@ Returns the list of tariff profiles of the user's own organisation.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TariffProfilesApi(
+$apiInstance = new Emnify\EmnifySdk\Api\TariffProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -268,7 +268,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\TariffProfile1[]**](../Model/TariffProfile1.md)
+[**\Emnify\EmnifySdk\Model\TariffProfile1[]**](../Model/TariffProfile1.md)
 
 ### Authorization
 
@@ -293,11 +293,11 @@ Assignes an inclusive volume to the selected tariff profile. If no inclusive vol
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TariffProfilesApi(
+$apiInstance = new Emnify\EmnifySdk\Api\TariffProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -348,11 +348,11 @@ Unassign the inclusive volume from the selected tariff profile. If the customer 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TariffProfilesApi(
+$apiInstance = new Emnify\EmnifySdk\Api\TariffProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -403,17 +403,17 @@ Create the specified tariff profile ID must not be specified, neither in query S
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TariffProfilesApi(
+$apiInstance = new Emnify\EmnifySdk\Api\TariffProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\CreateTariffProfilerequest(); // \Swagger\Client\Model\CreateTariffProfilerequest | 
+$body = new \Emnify\EmnifySdk\Model\CreateTariffProfilerequest(); // \Emnify\EmnifySdk\Model\CreateTariffProfilerequest | 
 
 try {
     $apiInstance->tariffProfilePost($body);
@@ -427,7 +427,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateTariffProfilerequest**](../Model/CreateTariffProfilerequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\CreateTariffProfilerequest**](../Model/CreateTariffProfilerequest.md)|  |
 
 ### Return type
 
@@ -456,11 +456,11 @@ Remove previously selected ratezones from a tariff profile
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TariffProfilesApi(
+$apiInstance = new Emnify\EmnifySdk\Api\TariffProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -511,11 +511,11 @@ Only currently valid and active ratezones can be selected for a tariff profile
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\TariffProfilesApi(
+$apiInstance = new Emnify\EmnifySdk\Api\TariffProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

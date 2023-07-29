@@ -1,4 +1,4 @@
-# Swagger\Client\ServiceLookupsAndConfigurationApi
+# Emnify\EmnifySdk\ServiceLookupsAndConfigurationApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -23,11 +23,11 @@ Delete a DNS configuration object by ID.  __NOTE:__ A DNS config object cannot b
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ServiceLookupsAndConfigurationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\ServiceLookupsAndConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -65,7 +65,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dnsGet**
-> \Swagger\Client\Model\InlineResponse2004[] dnsGet()
+> \Emnify\EmnifySdk\Model\InlineResponse2004[] dnsGet()
 
 List DNS Configs
 
@@ -76,11 +76,11 @@ Retrieves a list of DNS configurations. DNS settings can be applied to a service
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ServiceLookupsAndConfigurationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\ServiceLookupsAndConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -101,7 +101,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2004[]**](../Model/InlineResponse2004.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse2004[]**](../Model/InlineResponse2004.md)
 
 ### Authorization
 
@@ -126,17 +126,17 @@ Creates a DNS configuration object. The DNS config can be applied to a service p
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ServiceLookupsAndConfigurationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\ServiceLookupsAndConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\CreateaDNSentryrequest(); // \Swagger\Client\Model\CreateaDNSentryrequest | 
+$body = new \Emnify\EmnifySdk\Model\CreateaDNSentryrequest(); // \Emnify\EmnifySdk\Model\CreateaDNSentryrequest | 
 
 try {
     $apiInstance->dnsPost($body);
@@ -150,7 +150,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateaDNSentryrequest**](../Model/CreateaDNSentryrequest.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\CreateaDNSentryrequest**](../Model/CreateaDNSentryrequest.md)|  |
 
 ### Return type
 
@@ -168,7 +168,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **serviceGet**
-> \Swagger\Client\Model\RetrieveAvailableServicesresponse[] serviceGet()
+> \Emnify\EmnifySdk\Model\RetrieveAvailableServicesresponse[] serviceGet()
 
 List Services
 
@@ -179,11 +179,11 @@ Retrieves a collection of available services. Services are read only objects.  S
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ServiceLookupsAndConfigurationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\ServiceLookupsAndConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -204,7 +204,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveAvailableServicesresponse[]**](../Model/RetrieveAvailableServicesresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveAvailableServicesresponse[]**](../Model/RetrieveAvailableServicesresponse.md)
 
 ### Authorization
 
@@ -218,7 +218,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **serviceTrafficLimitByIdGet**
-> \Swagger\Client\Model\InlineResponse2003[] serviceTrafficLimitByIdGet($service_id)
+> \Emnify\EmnifySdk\Model\InlineResponse2003[] serviceTrafficLimitByIdGet($service_id)
 
 Get Service Traffic Limit
 
@@ -229,11 +229,11 @@ Traffic limits are system configuration parameters defined for a single service.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ServiceLookupsAndConfigurationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\ServiceLookupsAndConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse2003[]**](../Model/InlineResponse2003.md)
+[**\Emnify\EmnifySdk\Model\InlineResponse2003[]**](../Model/InlineResponse2003.md)
 
 ### Authorization
 
@@ -272,7 +272,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **trafficLimitGet**
-> \Swagger\Client\Model\RetrieveavailableTrafficLimitsresponse[] trafficLimitGet()
+> \Emnify\EmnifySdk\Model\RetrieveavailableTrafficLimitsresponse[] trafficLimitGet()
 
 List Traffic Limits
 
@@ -283,11 +283,11 @@ Retrieves a list of available traffic limits.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\ServiceLookupsAndConfigurationApi(
+$apiInstance = new Emnify\EmnifySdk\Api\ServiceLookupsAndConfigurationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -308,7 +308,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveavailableTrafficLimitsresponse[]**](../Model/RetrieveavailableTrafficLimitsresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveavailableTrafficLimitsresponse[]**](../Model/RetrieveavailableTrafficLimitsresponse.md)
 
 ### Authorization
 

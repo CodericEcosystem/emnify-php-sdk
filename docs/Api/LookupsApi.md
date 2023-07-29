@@ -1,4 +1,4 @@
-# Swagger\Client\LookupsApi
+# Emnify\EmnifySdk\LookupsApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**ratType**](LookupsApi.md#rattype) | **GET** /api/v1/rat_type | List RAT types
 
 # **breakoutRegionGet**
-> \Swagger\Client\Model\RetrieveAvailableBreakoutRegionsresponse[] breakoutRegionGet()
+> \Emnify\EmnifySdk\Model\RetrieveAvailableBreakoutRegionsresponse[] breakoutRegionGet()
 
 List Breakout Regions
 
@@ -25,11 +25,11 @@ Provides the list of available breakout regions.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\LookupsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\LookupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveAvailableBreakoutRegionsresponse[]**](../Model/RetrieveAvailableBreakoutRegionsresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveAvailableBreakoutRegionsresponse[]**](../Model/RetrieveAvailableBreakoutRegionsresponse.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **countryGet**
-> \Swagger\Client\Model\RetrieveAvailableCountriesresponse[] countryGet($geographic)
+> \Emnify\EmnifySdk\Model\RetrieveAvailableCountriesresponse[] countryGet($geographic)
 
 List Country Codes
 
@@ -75,11 +75,11 @@ Provides the list of available countries (lookup).
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\LookupsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\LookupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveAvailableCountriesresponse[]**](../Model/RetrieveAvailableCountriesresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveAvailableCountriesresponse[]**](../Model/RetrieveAvailableCountriesresponse.md)
 
 ### Authorization
 
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **currencyGet**
-> \Swagger\Client\Model\RetrieveAvailableCurrenciesresponse[] currencyGet()
+> \Emnify\EmnifySdk\Model\RetrieveAvailableCurrenciesresponse[] currencyGet()
 
 List Currencies
 
@@ -129,11 +129,11 @@ Provides the list of available currencies (lookup).
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\LookupsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\LookupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -154,7 +154,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveAvailableCurrenciesresponse[]**](../Model/RetrieveAvailableCurrenciesresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveAvailableCurrenciesresponse[]**](../Model/RetrieveAvailableCurrenciesresponse.md)
 
 ### Authorization
 
@@ -168,7 +168,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dataBlocksizeGet**
-> \Swagger\Client\Model\RetrieveAvailableDataBlocksizesresponse[] dataBlocksizeGet()
+> \Emnify\EmnifySdk\Model\RetrieveAvailableDataBlocksizesresponse[] dataBlocksizeGet()
 
 List Data blocksizes
 
@@ -179,11 +179,11 @@ Provides the list of available data blocksizes (lookup).
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\LookupsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\LookupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -204,7 +204,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveAvailableDataBlocksizesresponse[]**](../Model/RetrieveAvailableDataBlocksizesresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveAvailableDataBlocksizesresponse[]**](../Model/RetrieveAvailableDataBlocksizesresponse.md)
 
 ### Authorization
 
@@ -218,7 +218,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **dataThrottleGet**
-> \Swagger\Client\Model\RetrieveAvailableDataThrottlesresponse[] dataThrottleGet()
+> \Emnify\EmnifySdk\Model\RetrieveAvailableDataThrottlesresponse[] dataThrottleGet()
 
 List Data Throttles
 
@@ -229,11 +229,11 @@ Provides the list of available data throttles (lookup).
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\LookupsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\LookupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -254,7 +254,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveAvailableDataThrottlesresponse[]**](../Model/RetrieveAvailableDataThrottlesresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveAvailableDataThrottlesresponse[]**](../Model/RetrieveAvailableDataThrottlesresponse.md)
 
 ### Authorization
 
@@ -268,7 +268,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **esmeInterfaceTypeGet**
-> \Swagger\Client\Model\RetrieveAvailableESMEInterfaceTypesresponse[] esmeInterfaceTypeGet()
+> \Emnify\EmnifySdk\Model\RetrieveAvailableESMEInterfaceTypesresponse[] esmeInterfaceTypeGet()
 
 List ESME Interface Types
 
@@ -279,11 +279,11 @@ Provides the list of available ESME interface types.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\LookupsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\LookupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -304,7 +304,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\RetrieveAvailableESMEInterfaceTypesresponse[]**](../Model/RetrieveAvailableESMEInterfaceTypesresponse.md)
+[**\Emnify\EmnifySdk\Model\RetrieveAvailableESMEInterfaceTypesresponse[]**](../Model/RetrieveAvailableESMEInterfaceTypesresponse.md)
 
 ### Authorization
 
@@ -318,7 +318,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listServiceLevels**
-> \Swagger\Client\Model\Apiv1organisationorgIdtariffPlanTariffPlanServiceLevel[] listServiceLevels()
+> \Emnify\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanTariffPlanServiceLevel[] listServiceLevels()
 
 Get list of service levels
 
@@ -329,11 +329,11 @@ Returns a list of service levels that can be configured on a tariff plan level. 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\LookupsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\LookupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -354,7 +354,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\Apiv1organisationorgIdtariffPlanTariffPlanServiceLevel[]**](../Model/Apiv1organisationorgIdtariffPlanTariffPlanServiceLevel.md)
+[**\Emnify\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanTariffPlanServiceLevel[]**](../Model/Apiv1organisationorgIdtariffPlanTariffPlanServiceLevel.md)
 
 ### Authorization
 
@@ -368,7 +368,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ratType**
-> \Swagger\Client\Model\RATType[] ratType($blacklistable, $limitable)
+> \Emnify\EmnifySdk\Model\RATType[] ratType($blacklistable, $limitable)
 
 List RAT types
 
@@ -379,11 +379,11 @@ Returns a list of supported RAT types.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Swagger\Client\Configuration::getDefaultConfiguration()
+    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Swagger\Client\Api\LookupsApi(
+$apiInstance = new Emnify\EmnifySdk\Api\LookupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -410,7 +410,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\RATType[]**](../Model/RATType.md)
+[**\Emnify\EmnifySdk\Model\RATType[]**](../Model/RATType.md)
 
 ### Authorization
 
