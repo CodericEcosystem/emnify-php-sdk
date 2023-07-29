@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **auto_refill** | **bool** |  | [optional] 
 **threshold_percentage** | **float** |  | 
 **threshold_volume** | **float** |  | [optional] 
-**status** | [**\Emnify\EmnifySdk\Model\QuotaStatus**](QuotaStatus.md) |  | 
-**action_on_exhaustion** | [**\Emnify\EmnifySdk\Model\ActionOnExhaustion**](ActionOnExhaustion.md) |  | [optional] 
+**status** | [**\Swagger\Client\Model\QuotaStatus**](QuotaStatus.md) |  | 
+**action_on_exhaustion** | [**\Swagger\Client\Model\ActionOnExhaustion**](ActionOnExhaustion.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

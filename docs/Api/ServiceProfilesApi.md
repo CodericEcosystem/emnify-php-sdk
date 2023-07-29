@@ -1,4 +1,4 @@
-# Emnify\EmnifySdk\ServiceProfilesApi
+# Swagger\Client\ServiceProfilesApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -27,11 +27,11 @@ Add traffic limit to a collection of traffic limits associated with a service pr
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ServiceProfilesApi(
+$apiInstance = new Swagger\Client\Api\ServiceProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -84,11 +84,11 @@ Remove all quotas of endpoints which are assigned to this profile. Notice that `
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ServiceProfilesApi(
+$apiInstance = new Swagger\Client\Api\ServiceProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -139,11 +139,11 @@ Removes the assignment of a Traffic Limit from a service associated with a servi
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ServiceProfilesApi(
+$apiInstance = new Swagger\Client\Api\ServiceProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -196,11 +196,11 @@ Deletes a service profile and all its associations with services and traffic lim
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ServiceProfilesApi(
+$apiInstance = new Swagger\Client\Api\ServiceProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -238,7 +238,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **serviceProfileByProfileIdGet**
-> \Emnify\EmnifySdk\Model\RetrieveaSingleServiceProfileresponse serviceProfileByProfileIdGet($profile_id)
+> \Swagger\Client\Model\RetrieveaSingleServiceProfileresponse serviceProfileByProfileIdGet($profile_id)
 
 Retrieve a Service Profile
 
@@ -249,11 +249,11 @@ Retrieve a service profile with a given id.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ServiceProfilesApi(
+$apiInstance = new Swagger\Client\Api\ServiceProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -278,7 +278,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\RetrieveaSingleServiceProfileresponse**](../Model/RetrieveaSingleServiceProfileresponse.md)
+[**\Swagger\Client\Model\RetrieveaSingleServiceProfileresponse**](../Model/RetrieveaSingleServiceProfileresponse.md)
 
 ### Authorization
 
@@ -303,17 +303,17 @@ Update a service profile with a given id.  Editable fields: * `name` (String opt
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ServiceProfilesApi(
+$apiInstance = new Swagger\Client\Api\ServiceProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emnify\EmnifySdk\Model\UpdateServiceProfile(); // \Emnify\EmnifySdk\Model\UpdateServiceProfile | 
+$body = new \Swagger\Client\Model\UpdateServiceProfile(); // \Swagger\Client\Model\UpdateServiceProfile | 
 $profile_id = 1.2; // float | The Numeric ID of a Service Profile
 
 try {
@@ -329,7 +329,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emnify\EmnifySdk\Model\UpdateServiceProfile**](../Model/UpdateServiceProfile.md)|  |
+ **body** | [**\Swagger\Client\Model\UpdateServiceProfile**](../Model/UpdateServiceProfile.md)|  |
  **profile_id** | **float**| The Numeric ID of a Service Profile |
 
 ### Return type
@@ -348,7 +348,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **serviceProfileGet**
-> \Emnify\EmnifySdk\Model\RetrieveServiceProfileListresponse[] serviceProfileGet()
+> \Swagger\Client\Model\RetrieveServiceProfileListresponse[] serviceProfileGet()
 
 List Service Profiles
 
@@ -359,11 +359,11 @@ Retrieves a collection of all Service Profiles for your organisation.  Returned 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ServiceProfilesApi(
+$apiInstance = new Swagger\Client\Api\ServiceProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -384,7 +384,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\RetrieveServiceProfileListresponse[]**](../Model/RetrieveServiceProfileListresponse.md)
+[**\Swagger\Client\Model\RetrieveServiceProfileListresponse[]**](../Model/RetrieveServiceProfileListresponse.md)
 
 ### Authorization
 
@@ -409,17 +409,17 @@ Creates a new Service Profile. A `name` must be specified for the Service Profil
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ServiceProfilesApi(
+$apiInstance = new Swagger\Client\Api\ServiceProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emnify\EmnifySdk\Model\CreateaServiceProfilerequest(); // \Emnify\EmnifySdk\Model\CreateaServiceProfilerequest | 
+$body = new \Swagger\Client\Model\CreateaServiceProfilerequest(); // \Swagger\Client\Model\CreateaServiceProfilerequest | 
 
 try {
     $apiInstance->serviceProfilePost($body);
@@ -433,7 +433,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emnify\EmnifySdk\Model\CreateaServiceProfilerequest**](../Model/CreateaServiceProfilerequest.md)|  |
+ **body** | [**\Swagger\Client\Model\CreateaServiceProfilerequest**](../Model/CreateaServiceProfilerequest.md)|  |
 
 ### Return type
 
@@ -462,11 +462,11 @@ Remove service from the collection of services associated to a profile. A servic
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ServiceProfilesApi(
+$apiInstance = new Swagger\Client\Api\ServiceProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -517,11 +517,11 @@ Add service to the collection of services associated to a profile. Multiple serv
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ServiceProfilesApi(
+$apiInstance = new Swagger\Client\Api\ServiceProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

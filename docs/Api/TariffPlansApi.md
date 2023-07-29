@@ -1,4 +1,4 @@
-# Emnify\EmnifySdk\TariffPlansApi
+# Swagger\Client\TariffPlansApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**organisationTariffPlanByOrgIdGet**](TariffPlansApi.md#organisationtariffplanbyorgidget) | **GET** /api/v1/organisation/{org_id}/tariff_plan | List Organisation Tariff Plans
 
 # **getOrganisationActiveTariffPlan**
-> \Emnify\EmnifySdk\Model\GetOrganisationActiveTariffPlanResponse getOrganisationActiveTariffPlan($org_id_or_my)
+> \Swagger\Client\Model\GetOrganisationActiveTariffPlanResponse getOrganisationActiveTariffPlan($org_id_or_my)
 
 Get the active tariff plan for the given organisation
 
@@ -19,11 +19,11 @@ Retrieve detailed information about the currently assigned `tariff_plan` of the 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\TariffPlansApi(
+$apiInstance = new Swagger\Client\Api\TariffPlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\GetOrganisationActiveTariffPlanResponse**](../Model/GetOrganisationActiveTariffPlanResponse.md)
+[**\Swagger\Client\Model\GetOrganisationActiveTariffPlanResponse**](../Model/GetOrganisationActiveTariffPlanResponse.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **organisationTariffPlanByOrgIdGet**
-> \Emnify\EmnifySdk\Model\InlineResponse20012[] organisationTariffPlanByOrgIdGet($org_id)
+> \Swagger\Client\Model\InlineResponse20012[] organisationTariffPlanByOrgIdGet($org_id)
 
 List Organisation Tariff Plans
 
@@ -73,11 +73,11 @@ Retrieve a list of all Tariff Plans that are available for the given organisatio
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\TariffPlansApi(
+$apiInstance = new Swagger\Client\Api\TariffPlansApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\InlineResponse20012[]**](../Model/InlineResponse20012.md)
+[**\Swagger\Client\Model\InlineResponse20012[]**](../Model/InlineResponse20012.md)
 
 ### Authorization
 

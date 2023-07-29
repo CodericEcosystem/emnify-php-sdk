@@ -1,4 +1,4 @@
-# Emnify\EmnifySdk\USSDApi
+# Swagger\Client\USSDApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**endpointUssdByIdPost**](USSDApi.md#endpointussdbyidpost) | **POST** /api/v1/endpoint/{endpoint_id}/ussd | Create USSD dialog
 
 # **endpointUssdByIdPost**
-> \Emnify\EmnifySdk\Model\StartingaUSSDDialogresponse endpointUssdByIdPost($body, $endpoint_id)
+> \Swagger\Client\Model\StartingaUSSDDialogresponse endpointUssdByIdPost($body, $endpoint_id)
 
 Create USSD dialog
 
@@ -18,17 +18,17 @@ Your application may start a Network-Initiated (NI) USSD Dialog for an endpoint.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\USSDApi(
+$apiInstance = new Swagger\Client\Api\USSDApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emnify\EmnifySdk\Model\StartingaUSSDDialogrequest(); // \Emnify\EmnifySdk\Model\StartingaUSSDDialogrequest | 
+$body = new \Swagger\Client\Model\StartingaUSSDDialogrequest(); // \Swagger\Client\Model\StartingaUSSDDialogrequest | 
 $endpoint_id = 56; // int | Numeric ID of an endpoint
 
 try {
@@ -44,12 +44,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emnify\EmnifySdk\Model\StartingaUSSDDialogrequest**](../Model/StartingaUSSDDialogrequest.md)|  |
+ **body** | [**\Swagger\Client\Model\StartingaUSSDDialogrequest**](../Model/StartingaUSSDDialogrequest.md)|  |
  **endpoint_id** | **int**| Numeric ID of an endpoint |
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\StartingaUSSDDialogresponse**](../Model/StartingaUSSDDialogresponse.md)
+[**\Swagger\Client\Model\StartingaUSSDDialogresponse**](../Model/StartingaUSSDDialogresponse.md)
 
 ### Authorization
 

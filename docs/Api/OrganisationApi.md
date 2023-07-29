@@ -1,4 +1,4 @@
-# Emnify\EmnifySdk\OrganisationApi
+# Swagger\Client\OrganisationApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 [**updateOrganisationTariff**](OrganisationApi.md#updateorganisationtariff) | **PATCH** /api/v1/organisation/{org_id}/tariff | Update assigned tariff
 
 # **assignRatezoneInclusiveVolume**
-> \Emnify\EmnifySdk\Model\InlineResponse201 assignRatezoneInclusiveVolume($org_id_or_my, $inclusive_volume_id, $body)
+> \Swagger\Client\Model\InlineResponse201 assignRatezoneInclusiveVolume($org_id_or_my, $inclusive_volume_id, $body)
 
 Assign a ratezone inclusive volume to an organisation
 
@@ -26,11 +26,11 @@ Assign a pre-configured ratezone inclusive volume to the specified organisation.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\OrganisationApi(
+$apiInstance = new Swagger\Client\Api\OrganisationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -38,7 +38,7 @@ $apiInstance = new Emnify\EmnifySdk\Api\OrganisationApi(
 );
 $org_id_or_my = "org_id_or_my_example"; // string | Numerical ID of an Organisation or the string `my` to use the currently authorized organisation
 $inclusive_volume_id = 1.2; // float | Numerical ID of a ratezone inclusive volume. Can be retrieved using `GET /api/v1/tariff/{tariff_id}/ratezone/{ratezone_id}/inclusive_volume`.
-$body = new \Emnify\EmnifySdk\Model\InclusiveVolumeInclusiveVolumeIdBody(); // \Emnify\EmnifySdk\Model\InclusiveVolumeInclusiveVolumeIdBody | 
+$body = new \Swagger\Client\Model\InclusiveVolumeInclusiveVolumeIdBody(); // \Swagger\Client\Model\InclusiveVolumeInclusiveVolumeIdBody | 
 
 try {
     $result = $apiInstance->assignRatezoneInclusiveVolume($org_id_or_my, $inclusive_volume_id, $body);
@@ -55,11 +55,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **org_id_or_my** | **string**| Numerical ID of an Organisation or the string &#x60;my&#x60; to use the currently authorized organisation |
  **inclusive_volume_id** | **float**| Numerical ID of a ratezone inclusive volume. Can be retrieved using &#x60;GET /api/v1/tariff/{tariff_id}/ratezone/{ratezone_id}/inclusive_volume&#x60;. |
- **body** | [**\Emnify\EmnifySdk\Model\InclusiveVolumeInclusiveVolumeIdBody**](../Model/InclusiveVolumeInclusiveVolumeIdBody.md)|  | [optional]
+ **body** | [**\Swagger\Client\Model\InclusiveVolumeInclusiveVolumeIdBody**](../Model/InclusiveVolumeInclusiveVolumeIdBody.md)|  | [optional]
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\InlineResponse201**](../Model/InlineResponse201.md)
+[**\Swagger\Client\Model\InlineResponse201**](../Model/InlineResponse201.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getActiveOrganisationInclusiveVolume**
-> \Emnify\EmnifySdk\Model\InlineResponse20013[] getActiveOrganisationInclusiveVolume($org_id_or_my)
+> \Swagger\Client\Model\InlineResponse20013[] getActiveOrganisationInclusiveVolume($org_id_or_my)
 
 Get list of active organisation inclusive volumes
 
@@ -84,11 +84,11 @@ Returns of a list of inclusive volumes that are currently active in the current 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\OrganisationApi(
+$apiInstance = new Swagger\Client\Api\OrganisationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\InlineResponse20013[]**](../Model/InlineResponse20013.md)
+[**\Swagger\Client\Model\InlineResponse20013[]**](../Model/InlineResponse20013.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrganisationDailyStats**
-> \Emnify\EmnifySdk\Model\InlineResponse2001[] getOrganisationDailyStats($org_id_or_my, $start_date, $end_date)
+> \Swagger\Client\Model\InlineResponse2001[] getOrganisationDailyStats($org_id_or_my, $start_date, $end_date)
 
 Daily organisation traffic and cost statistics
 
@@ -138,11 +138,11 @@ Retrieves traffic and cost statistics for the selected organisation and all thei
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\OrganisationApi(
+$apiInstance = new Swagger\Client\Api\OrganisationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\InlineResponse2001[]**](../Model/InlineResponse2001.md)
+[**\Swagger\Client\Model\InlineResponse2001[]**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrganisationHourlyStats**
-> \Emnify\EmnifySdk\Model\GetHourlyOrganisationStatsResponse getOrganisationHourlyStats($org_id_or_my, $start_date, $end_date)
+> \Swagger\Client\Model\GetHourlyOrganisationStatsResponse getOrganisationHourlyStats($org_id_or_my, $start_date, $end_date)
 
 Hourly organisation traffic statistics
 
@@ -196,11 +196,11 @@ Retrieve traffic statistics for the selected organisation and all their child or
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\OrganisationApi(
+$apiInstance = new Swagger\Client\Api\OrganisationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -229,7 +229,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\GetHourlyOrganisationStatsResponse**](../Model/GetHourlyOrganisationStatsResponse.md)
+[**\Swagger\Client\Model\GetHourlyOrganisationStatsResponse**](../Model/GetHourlyOrganisationStatsResponse.md)
 
 ### Authorization
 
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrganisationMonthlyStats**
-> \Emnify\EmnifySdk\Model\GetMonthlyOrganisationStatsResponse getOrganisationMonthlyStats($org_id_or_my)
+> \Swagger\Client\Model\GetMonthlyOrganisationStatsResponse getOrganisationMonthlyStats($org_id_or_my)
 
 Monthly organisation traffic and cost statistics
 
@@ -254,11 +254,11 @@ Retrieves traffic and cost statistics for the selected organisation.  Traffic st
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\OrganisationApi(
+$apiInstance = new Swagger\Client\Api\OrganisationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -283,7 +283,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\GetMonthlyOrganisationStatsResponse**](../Model/GetMonthlyOrganisationStatsResponse.md)
+[**\Swagger\Client\Model\GetMonthlyOrganisationStatsResponse**](../Model/GetMonthlyOrganisationStatsResponse.md)
 
 ### Authorization
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **myOrganisationGet**
-> \Emnify\EmnifySdk\Model\InlineResponse200 myOrganisationGet()
+> \Swagger\Client\Model\InlineResponse200 myOrganisationGet()
 
 My Organisation Details
 
@@ -308,11 +308,11 @@ You can retrieve details about your own organisation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\OrganisationApi(
+$apiInstance = new Swagger\Client\Api\OrganisationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -333,7 +333,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\Swagger\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 
@@ -347,7 +347,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **organisationStatusGet**
-> \Emnify\EmnifySdk\Model\RetrieveOrganisationStatusesresponse[] organisationStatusGet()
+> \Swagger\Client\Model\RetrieveOrganisationStatusesresponse[] organisationStatusGet()
 
 List Organisation Status
 
@@ -358,11 +358,11 @@ Provides a list of available organisation status (lookup).
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\OrganisationApi(
+$apiInstance = new Swagger\Client\Api\OrganisationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -383,7 +383,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\RetrieveOrganisationStatusesresponse[]**](../Model/RetrieveOrganisationStatusesresponse.md)
+[**\Swagger\Client\Model\RetrieveOrganisationStatusesresponse[]**](../Model/RetrieveOrganisationStatusesresponse.md)
 
 ### Authorization
 
@@ -408,11 +408,11 @@ Retrieve usage and costs statistics for the currently logged in organisation and
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\OrganisationApi(
+$apiInstance = new Swagger\Client\Api\OrganisationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -458,17 +458,17 @@ Allows an organisation to change their assigned tariff.  The following restricti
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\OrganisationApi(
+$apiInstance = new Swagger\Client\Api\OrganisationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emnify\EmnifySdk\Model\UpdateTariffRequest(); // \Emnify\EmnifySdk\Model\UpdateTariffRequest | 
+$body = new \Swagger\Client\Model\UpdateTariffRequest(); // \Swagger\Client\Model\UpdateTariffRequest | 
 $org_id = 1.2; // float | Numerical ID of an Organisation
 
 try {
@@ -483,7 +483,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emnify\EmnifySdk\Model\UpdateTariffRequest**](../Model/UpdateTariffRequest.md)|  |
+ **body** | [**\Swagger\Client\Model\UpdateTariffRequest**](../Model/UpdateTariffRequest.md)|  |
  **org_id** | **float**| Numerical ID of an Organisation |
 
 ### Return type

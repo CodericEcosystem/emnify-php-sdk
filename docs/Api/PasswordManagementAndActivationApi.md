@@ -1,4 +1,4 @@
-# Emnify\EmnifySdk\PasswordManagementAndActivationApi
+# Swagger\Client\PasswordManagementAndActivationApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -20,12 +20,12 @@ This service activates the user account and sets a password. The activation key 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Emnify\EmnifySdk\Api\PasswordManagementAndActivationApi(
+$apiInstance = new Swagger\Client\Api\PasswordManagementAndActivationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Emnify\EmnifySdk\Model\AccountActivationrequest(); // \Emnify\EmnifySdk\Model\AccountActivationrequest | 
+$body = new \Swagger\Client\Model\AccountActivationrequest(); // \Swagger\Client\Model\AccountActivationrequest | 
 
 try {
     $apiInstance->userActivationPost($body);
@@ -39,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emnify\EmnifySdk\Model\AccountActivationrequest**](../Model/AccountActivationrequest.md)|  |
+ **body** | [**\Swagger\Client\Model\AccountActivationrequest**](../Model/AccountActivationrequest.md)|  |
 
 ### Return type
 
@@ -68,12 +68,12 @@ This service re-sends activation mail to the user.  As this endpoint is open to 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Emnify\EmnifySdk\Api\PasswordManagementAndActivationApi(
+$apiInstance = new Swagger\Client\Api\PasswordManagementAndActivationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Emnify\EmnifySdk\Model\ResendActivationMailrequest(); // \Emnify\EmnifySdk\Model\ResendActivationMailrequest | 
+$body = new \Swagger\Client\Model\ResendActivationMailrequest(); // \Swagger\Client\Model\ResendActivationMailrequest | 
 
 try {
     $apiInstance->userActivationResendPost($body);
@@ -87,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emnify\EmnifySdk\Model\ResendActivationMailrequest**](../Model/ResendActivationMailrequest.md)|  |
+ **body** | [**\Swagger\Client\Model\ResendActivationMailrequest**](../Model/ResendActivationMailrequest.md)|  |
 
 ### Return type
 
@@ -116,17 +116,17 @@ Password change service.  Allows to change the password for the currently authen
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\PasswordManagementAndActivationApi(
+$apiInstance = new Swagger\Client\Api\PasswordManagementAndActivationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emnify\EmnifySdk\Model\ChangePasswordrequest(); // \Emnify\EmnifySdk\Model\ChangePasswordrequest | 
+$body = new \Swagger\Client\Model\ChangePasswordrequest(); // \Swagger\Client\Model\ChangePasswordrequest | 
 
 try {
     $apiInstance->userPasswordPatch($body);
@@ -140,7 +140,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emnify\EmnifySdk\Model\ChangePasswordrequest**](../Model/ChangePasswordrequest.md)|  |
+ **body** | [**\Swagger\Client\Model\ChangePasswordrequest**](../Model/ChangePasswordrequest.md)|  |
 
 ### Return type
 

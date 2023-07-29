@@ -1,4 +1,4 @@
-# Emnify\EmnifySdk\ApplicationTokensApi
+# Swagger\Client\ApplicationTokensApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -20,17 +20,17 @@ The `description` of the token may be updated and the Application Token can be r
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ApplicationTokensApi(
+$apiInstance = new Swagger\Client\Api\ApplicationTokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emnify\EmnifySdk\Model\ApplicationToken(); // \Emnify\EmnifySdk\Model\ApplicationToken | 
+$body = new \Swagger\Client\Model\ApplicationToken(); // \Swagger\Client\Model\ApplicationToken | 
 $app_token_id = 1.2; // float | application token ID
 
 try {
@@ -45,7 +45,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emnify\EmnifySdk\Model\ApplicationToken**](../Model/ApplicationToken.md)|  |
+ **body** | [**\Swagger\Client\Model\ApplicationToken**](../Model/ApplicationToken.md)|  |
  **app_token_id** | **float**| application token ID |
 
 ### Return type
@@ -64,7 +64,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **applicationTokenGet**
-> \Emnify\EmnifySdk\Model\ListofApplicationTokensresponse[] applicationTokenGet()
+> \Swagger\Client\Model\ListofApplicationTokensresponse[] applicationTokenGet()
 
 List Application Tokens
 
@@ -75,11 +75,11 @@ Returns the list of application tokens for the organisation of the requesting us
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ApplicationTokensApi(
+$apiInstance = new Swagger\Client\Api\ApplicationTokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -100,7 +100,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\ListofApplicationTokensresponse[]**](../Model/ListofApplicationTokensresponse.md)
+[**\Swagger\Client\Model\ListofApplicationTokensresponse[]**](../Model/ListofApplicationTokensresponse.md)
 
 ### Authorization
 
@@ -114,7 +114,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **applicationTokenPost**
-> \Emnify\EmnifySdk\Model\CreateApplicationTokenresponse applicationTokenPost($body)
+> \Swagger\Client\Model\CreateApplicationTokenresponse applicationTokenPost($body)
 
 Create Application Token
 
@@ -125,17 +125,17 @@ Creates a new application token. ID must not be specified, as it is auto-generat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\ApplicationTokensApi(
+$apiInstance = new Swagger\Client\Api\ApplicationTokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emnify\EmnifySdk\Model\CreateApplicationTokenrequest(); // \Emnify\EmnifySdk\Model\CreateApplicationTokenrequest | 
+$body = new \Swagger\Client\Model\CreateApplicationTokenrequest(); // \Swagger\Client\Model\CreateApplicationTokenrequest | 
 
 try {
     $result = $apiInstance->applicationTokenPost($body);
@@ -150,11 +150,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emnify\EmnifySdk\Model\CreateApplicationTokenrequest**](../Model/CreateApplicationTokenrequest.md)|  |
+ **body** | [**\Swagger\Client\Model\CreateApplicationTokenrequest**](../Model/CreateApplicationTokenrequest.md)|  |
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\CreateApplicationTokenresponse**](../Model/CreateApplicationTokenresponse.md)
+[**\Swagger\Client\Model\CreateApplicationTokenresponse**](../Model/CreateApplicationTokenresponse.md)
 
 ### Authorization
 

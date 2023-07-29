@@ -14,11 +14,11 @@ Name | Type | Description | Notes
 **currency_id** | **string** |  | [optional] 
 **federation_allowed** | **bool** | Custom federation_allowed configuration for the organisation. If set to null, the default configuration from the tariff plan will be applied. | [optional] 
 **factory_test_mode_allowed** | **bool** | Custom factory_test_mode_allowed configuration for the organisation. If set to null, the default configuration from the tariff plan will be applied. | [optional] 
-**service_level** | [**\Emnify\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanServiceLevel**](Apiv1organisationorgIdtariffPlanServiceLevel.md) |  | [optional] 
+**service_level** | [**\Swagger\Client\Model\Apiv1organisationorgIdtariffPlanServiceLevel**](Apiv1organisationorgIdtariffPlanServiceLevel.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 **applied_rate** | **float** |  | [optional] 
 **price_model** | **string** |  | [optional] 
-**tariff_plan** | [**\Emnify\EmnifySdk\Model\Apiv1organisationorgIdtariffPlanTariffPlan**](Apiv1organisationorgIdtariffPlanTariffPlan.md) |  | [optional] 
+**tariff_plan** | [**\Swagger\Client\Model\Apiv1organisationorgIdtariffPlanTariffPlan**](Apiv1organisationorgIdtariffPlanTariffPlan.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

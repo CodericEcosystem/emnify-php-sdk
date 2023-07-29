@@ -1,4 +1,4 @@
-# Emnify\EmnifySdk\IPAddressSpacesApi
+# Swagger\Client\IPAddressSpacesApi
 
 All URIs are relative to *https://cdn.emnify.net*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**ipAddressSpaceGet**](IPAddressSpacesApi.md#ipaddressspaceget) | **GET** /api/v1/ip_address_space | List IP Address Spaces
 
 # **ipAddressSpaceAvailableByIpAddressVersionGet**
-> \Emnify\EmnifySdk\Model\RetrieveAvailableAddressSpacesresponse[] ipAddressSpaceAvailableByIpAddressVersionGet($ip_address_version)
+> \Swagger\Client\Model\RetrieveAvailableAddressSpacesresponse[] ipAddressSpaceAvailableByIpAddressVersionGet($ip_address_version)
 
 Get Random Address Spaces
 
@@ -21,11 +21,11 @@ Provides a list of 10 random available address spaces (unassigned to any organis
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\IPAddressSpacesApi(
+$apiInstance = new Swagger\Client\Api\IPAddressSpacesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\RetrieveAvailableAddressSpacesresponse[]**](../Model/RetrieveAvailableAddressSpacesresponse.md)
+[**\Swagger\Client\Model\RetrieveAvailableAddressSpacesresponse[]**](../Model/RetrieveAvailableAddressSpacesresponse.md)
 
 ### Authorization
 
@@ -75,11 +75,11 @@ Release the IP address space from association with the user's organisation.  Not
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\IPAddressSpacesApi(
+$apiInstance = new Swagger\Client\Api\IPAddressSpacesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -128,11 +128,11 @@ The IP address space is assigned to the user's organisation.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\IPAddressSpacesApi(
+$apiInstance = new Swagger\Client\Api\IPAddressSpacesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -170,7 +170,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **ipAddressSpaceGet**
-> \Emnify\EmnifySdk\Model\RetrieveownIPAddressSpacesresponse[] ipAddressSpaceGet()
+> \Swagger\Client\Model\RetrieveownIPAddressSpacesresponse[] ipAddressSpaceGet()
 
 List IP Address Spaces
 
@@ -181,11 +181,11 @@ Returns the list of IP address space for the requesting user's organisation
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: bearerAuth
-    $config = Emnify\EmnifySdk\Configuration::getDefaultConfiguration()
+    $config = Swagger\Client\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Emnify\EmnifySdk\Api\IPAddressSpacesApi(
+$apiInstance = new Swagger\Client\Api\IPAddressSpacesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -206,7 +206,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\RetrieveownIPAddressSpacesresponse[]**](../Model/RetrieveownIPAddressSpacesresponse.md)
+[**\Swagger\Client\Model\RetrieveownIPAddressSpacesresponse[]**](../Model/RetrieveownIPAddressSpacesresponse.md)
 
 ### Authorization
 
