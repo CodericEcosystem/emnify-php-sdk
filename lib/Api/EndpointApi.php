@@ -5867,7 +5867,8 @@ class EndpointApi
      */
     public function endpointStatsDailyByIdGet($endpoint_id, $start_date = null, $end_date = null)
     {
-        $this->endpointStatsDailyByIdGetWithHttpInfo($endpoint_id, $start_date, $end_date);
+        list($response) = $this->endpointStatsDailyByIdGetWithHttpInfo($endpoint_id, $start_date, $end_date);
+        return $response;
     }
 
     /**
@@ -5885,8 +5886,9 @@ class EndpointApi
      */
     public function endpointStatsDailyByIdGetWithHttpInfo($endpoint_id, $start_date = null, $end_date = null)
     {
-        $returnType = '';
+        $returnType = '\Emnify\EmnifySdk\Model\InlineResponse2001[]';
         $request = $this->endpointStatsDailyByIdGetRequest($endpoint_id, $start_date, $end_date);
+
 
         try {
             $options = $this->createHttpClientOption();
@@ -5916,9 +5918,31 @@ class EndpointApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            $responseBody = $response->getBody();
+            if ($returnType === '\SplFileObject') {
+                $content = $responseBody; //stream goes to serializer
+            } else {
+                $content = $responseBody->getContents();
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
+                    $content = json_decode($content);
+                }
+            }
+
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
+                case 200:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\Emnify\EmnifySdk\Model\InlineResponse2001',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
             }
             throw $e;
         }

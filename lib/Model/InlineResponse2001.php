@@ -1,4 +1,5 @@
 <?php
+
 /**
  * InlineResponse2001
  *
@@ -44,17 +45,17 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $swaggerModelName = 'inline_response_200_1';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerTypes = [
         'date' => 'string',
         'data' => '\Emnify\EmnifySdk\Model\OrganisationDailyTrafficObject',
@@ -62,10 +63,10 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerFormats = [
         'date' => null,
         'data' => null,
@@ -242,7 +243,7 @@ class InlineResponse2001 implements ModelInterface, ArrayAccess
      *
      * @return \Emnify\EmnifySdk\Model\OrganisationDailyTrafficObject
      */
-    public function getData()
+    public function getData(): OrganisationDailyTrafficObject
     {
         return $this->container['data'];
     }

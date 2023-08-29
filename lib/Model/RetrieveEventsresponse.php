@@ -56,7 +56,7 @@ class RetrieveEventsresponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'timestamp' => '\DateTime',
+        'timestamp' => 'string',
         'alert' => 'bool',
         'description' => 'string',
         'id' => 'int',
@@ -75,7 +75,7 @@ class RetrieveEventsresponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'timestamp' =>  'date-time',
+        'timestamp' => null,
         'alert' => null,
         'description' => null,
         'id' => 'int32',
