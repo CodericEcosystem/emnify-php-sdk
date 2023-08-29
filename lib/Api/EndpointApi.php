@@ -1,4 +1,5 @@
 <?php
+
 /**
  * EndpointApi
  * PHP version 5
@@ -147,7 +148,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 404:
@@ -299,20 +299,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -395,7 +393,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -528,20 +525,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -624,7 +619,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -757,20 +751,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -853,7 +845,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -986,20 +977,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -1087,7 +1076,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -1097,7 +1086,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -1252,20 +1240,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -1350,7 +1336,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -1489,20 +1474,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -1585,7 +1568,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -1718,20 +1700,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -1819,7 +1799,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -1829,7 +1809,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -1984,20 +1963,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -2082,7 +2059,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -2227,20 +2203,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -2328,7 +2302,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -2338,7 +2312,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -2493,20 +2466,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -2602,7 +2573,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -2612,7 +2583,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -2795,20 +2765,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -2896,7 +2864,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -2906,7 +2874,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -3061,20 +3028,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -3159,7 +3124,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 404:
@@ -3317,20 +3281,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -3415,7 +3377,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 409:
@@ -3573,20 +3534,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -3674,7 +3633,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -3684,7 +3643,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -3839,20 +3797,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -3937,7 +3893,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 422:
@@ -4090,20 +4045,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -4185,8 +4138,21 @@ class EndpointApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            $responseBody = $response->getBody();
+            if ($returnType === '\SplFileObject') {
+                $content = $responseBody; //stream goes to serializer
+            } else {
+                $content = $responseBody->getContents();
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
+                    $content = json_decode($content);
+                }
+            }
 
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []), 
+                $statusCode, 
+                $response->getHeaders()
+            ];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -4319,20 +4285,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -4417,7 +4381,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -4562,20 +4525,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -4660,7 +4621,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -4810,20 +4770,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -4913,7 +4871,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -4923,7 +4881,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -5095,20 +5052,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -5196,7 +5151,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -5206,7 +5161,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -5361,20 +5315,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -5459,7 +5411,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -5604,20 +5555,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -5705,7 +5654,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -5715,7 +5664,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -5870,20 +5818,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -5970,7 +5916,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -6117,20 +6062,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -6216,7 +6159,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -6226,7 +6169,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -6364,20 +6306,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -6469,7 +6409,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -6479,7 +6419,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -6664,20 +6603,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -6771,7 +6708,7 @@ class EndpointApi
                 $content = $responseBody; //stream goes to serializer
             } else {
                 $content = $responseBody->getContents();
-                if (!in_array($returnType, ['string','integer','bool'])) {
+                if (!in_array($returnType, ['string', 'integer', 'bool'])) {
                     $content = json_decode($content);
                 }
             }
@@ -6781,7 +6718,6 @@ class EndpointApi
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
@@ -6947,20 +6883,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
@@ -7045,7 +6979,6 @@ class EndpointApi
             }
 
             return [null, $statusCode, $response->getHeaders()];
-
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -7184,20 +7117,18 @@ class EndpointApi
                 }
                 // for HTTP post (form)
                 $httpBody = new MultipartStream($multipartContents);
-
             } elseif ($headers['Content-Type'] === 'application/json') {
                 $httpBody = \GuzzleHttp\json_encode($formParams);
-
             } else {
                 // for HTTP post (form)
                 $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
             }
         }
 
-            // // this endpoint requires Bearer token
-            if ($this->config->getAccessToken() !== null) {
+        // // this endpoint requires Bearer token
+        if ($this->config->getAccessToken() !== null) {
             $headers['Authorization'] = 'Bearer ' . $this->config->getAccessToken();
-            }
+        }
 
         $defaultHeaders = [];
         if ($this->config->getUserAgent()) {
