@@ -4087,11 +4087,12 @@ class EndpointApi
      *
      * @throws \Emnify\EmnifySdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return void
+     * @return \Emnify\EmnifySdk\Model\QuotaSMS, HTTP status code, HTTP response headers (array of strings)
      */
     public function endpointQuotaSmsByEndpointIdGet($endpoint_id)
     {
-        $this->endpointQuotaSmsByEndpointIdGetWithHttpInfo($endpoint_id);
+        list($response) = $this->endpointQuotaSmsByEndpointIdGetWithHttpInfo($endpoint_id);
+        return $response;
     }
 
     /**
@@ -4103,7 +4104,7 @@ class EndpointApi
      *
      * @throws \Emnify\EmnifySdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Emnify\EmnifySdk\Model\QuotaSMS, HTTP status code, HTTP response headers (array of strings)
      */
     public function endpointQuotaSmsByEndpointIdGetWithHttpInfo($endpoint_id)
     {
@@ -4149,8 +4150,8 @@ class EndpointApi
             }
 
             return [
-                ObjectSerializer::deserialize($content, $returnType, []), 
-                $statusCode, 
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $statusCode,
                 $response->getHeaders()
             ];
         } catch (ApiException $e) {
