@@ -2537,7 +2537,7 @@ class EndpointApi
      */
     public function endpointEventsByIDWithHttpInfo($endpoint_id, $page = null, $per_page = null, $sort = null, $q = null)
     {
-        $returnType = '\Emnify\EmnifySdk\Model\RetrieveEventsresponse';
+        $returnType = '\Emnify\EmnifySdk\Model\RetrieveEventsresponse[]';
         $request = $this->endpointEventsByIDRequest($endpoint_id, $page, $per_page, $sort, $q);
 
         try {
