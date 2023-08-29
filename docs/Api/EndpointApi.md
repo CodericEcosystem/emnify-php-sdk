@@ -797,7 +797,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **endpointQuotaDataByEndpointIdGet**
-> \Emnify\EmnifySdk\Model\EndpointQuota endpointQuotaDataByEndpointIdGet($endpoint_id)
+> \Emnify\EmnifySdk\Model\Quota endpointQuotaDataByEndpointIdGet($endpoint_id)
 
 Retrieve Data Quota details
 
@@ -837,7 +837,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emnify\EmnifySdk\Model\EndpointQuota**](../Model/EndpointQuota.md)
+[**\Emnify\EmnifySdk\Model\Quota**](../Model/Quota.md)
 
 ### Authorization
 
@@ -872,7 +872,7 @@ $apiInstance = new Emnify\EmnifySdk\Api\EndpointApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emnify\EmnifySdk\Model\EndpointQuota1(); // \Emnify\EmnifySdk\Model\EndpointQuota1 | 
+$body = new \Emnify\EmnifySdk\Model\Quota(); // \Emnify\EmnifySdk\Model\Quota | 
 $endpoint_id = 56; // int | Numeric ID of an endpoint
 
 try {
@@ -887,7 +887,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emnify\EmnifySdk\Model\EndpointQuota1**](../Model/EndpointQuota1.md)|  |
+ **body** | [**\Emnify\EmnifySdk\Model\Quota**](../Model/Quota.md)|  |
  **endpoint_id** | **int**| Numeric ID of an endpoint |
 
 ### Return type

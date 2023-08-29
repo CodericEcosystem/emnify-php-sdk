@@ -1,4 +1,4 @@
-# EndpointQuota1
+# Quota
 
 ## Properties
 Name | Type | Description | Notes
