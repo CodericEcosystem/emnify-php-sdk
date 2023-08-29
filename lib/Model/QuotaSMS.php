@@ -423,6 +423,30 @@ class QuotaSMS implements ModelInterface, ArrayAccess
     }
 
     /**
+     * Gets status
+     *
+     * @return \Emnify\EmnifySdk\Model\Status
+     */
+    public function getStatus()
+    {
+        return $this->container['status'];
+    }
+
+    /**
+     * Sets status
+     *
+     * @param \Emnify\EmnifySdk\Model\Status $status status
+     *
+     * @return $this
+     */
+    public function setStatus($status)
+    {
+        $this->container['status'] = $status;
+
+        return $this;
+    }
+    
+    /**
      * Gets action_on_exhaustion
      *
      * @return \Emnify\EmnifySdk\Model\ActionOnExhaustion
