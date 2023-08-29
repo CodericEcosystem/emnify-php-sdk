@@ -4192,7 +4192,7 @@ class EndpointApi
      */
     public function endpointQuotaSmsByEndpointIdGetAsyncWithHttpInfo($endpoint_id)
     {
-        $returnType = '';
+        $returnType = '\Emnify\EmnifySdk\Model\QuotaSMS';
         $request = $this->endpointQuotaSmsByEndpointIdGetRequest($endpoint_id);
 
         return $this->client
