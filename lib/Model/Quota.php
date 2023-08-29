@@ -66,6 +66,7 @@ class Quota implements ModelInterface, ArrayAccess
         'threshold_volume' => 'int',
         'status' => '\Emnify\EmnifySdk\Model\Status',
         'action_on_exhaustion' => '\Emnify\EmnifySdk\Model\ActionOnExhaustion',
+        'peak_throughput' => 'int'
     ];
 
 
@@ -83,8 +84,8 @@ class Quota implements ModelInterface, ArrayAccess
         'threshold_percentage' => 'int32',
         'threshold_volume' => 'int32',
         'status' => null,
-        'action_on_exhaustion' => null // In the future plan build own Model instead status model
-
+        'action_on_exhaustion' => null, // In the future plan build own Model instead status model
+        'peak_throughput' => 'int32'
     ];
 
     /**
@@ -122,7 +123,8 @@ class Quota implements ModelInterface, ArrayAccess
         'threshold_percentage' => 'threshold_percentage',
         'threshold_volume' => 'threshold_volume',
         'status' => 'status',
-        'action_on_exhaustion' => 'action_on_exhaustion'
+        'action_on_exhaustion' => 'action_on_exhaustion',
+        'peak_throughput' => 'peak_throughput'
     ];
 
     /**
@@ -139,7 +141,8 @@ class Quota implements ModelInterface, ArrayAccess
         'threshold_percentage' => 'setThresholdPercentage',
         'threshold_volume' => 'setThresholdVolume',
         'status' => 'setStatus',
-        'action_on_exhaustion' => 'setActionOnExhaustion'
+        'action_on_exhaustion' => 'setActionOnExhaustion',
+        'peak_throughput' => 'setPeakThroughput'
     ];
 
     /**
@@ -156,7 +159,8 @@ class Quota implements ModelInterface, ArrayAccess
         'threshold_percentage' => 'getThresholdPercentage',
         'threshold_volume' => 'getThresholdVolume',
         'status' => 'getStatus',
-        'action_on_exhaustion' => 'getActionOnExhaustion'
+        'action_on_exhaustion' => 'getActionOnExhaustion',
+        'peak_throughput' => 'getPeakThroughput'
     ];
 
     /**
@@ -228,6 +232,7 @@ class Quota implements ModelInterface, ArrayAccess
         $this->container['threshold_volume'] = isset($data['threshold_volume']) ? $data['threshold_volume'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
         $this->container['action_on_exhaustion'] = isset($data['action_on_exhaustion']) ? $data['action_on_exhaustion'] : null;
+        $this->container['peak_throughput'] = isset($data['peak_throughput']) ? $data['peak_throughput'] : null;
     }
 
     /**
@@ -445,7 +450,7 @@ class Quota implements ModelInterface, ArrayAccess
 
         return $this;
     }
-    
+
     /**
      * Gets action_on_exhaustion
      *
@@ -470,6 +475,29 @@ class Quota implements ModelInterface, ArrayAccess
         return $this;
     }
 
+    /**
+     * Gets peak_throughput
+     *
+     * @return int
+     */
+    public function getPeakThroughput()
+    {
+        return $this->container['peak_throughput'];
+    }
+
+    /**
+     * Sets peak_throughput
+     *
+     * @param int $peak_throughput peak_throughput
+     *
+     * @return $this
+     */
+    public function setPeakThroughput($peak_throughput)
+    {
+        $this->container['peak_throughput'] = $peak_throughput;
+
+        return $this;
+    }
     /**
      * Returns true if offset exists. False otherwise.
      *
