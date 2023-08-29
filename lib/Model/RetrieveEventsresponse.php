@@ -56,7 +56,7 @@ class RetrieveEventsresponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'timestamp' => '\DateTme',
+        'timestamp' => '\DateTime',
         'alert' => 'bool',
         'description' => 'string',
         'id' => 'int',
