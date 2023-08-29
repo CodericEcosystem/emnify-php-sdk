@@ -5619,7 +5619,7 @@ class EndpointApi
      */
     public function endpointStatsByIdGetWithHttpInfo($endpoint_id)
     {
-        $returnType = '\Emnify\EmnifySdk\Model\RetrieveEndpointStatisticsresponse';
+        $returnType = '\Emnify\EmnifySdk\Model\RetrieveEndpointStatisticsresponse[]';
         $request = $this->endpointStatsByIdGetRequest($endpoint_id);
 
         try {
