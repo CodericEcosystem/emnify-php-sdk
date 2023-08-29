@@ -3576,7 +3576,7 @@ class EndpointApi
      *
      * @throws \Emnify\EmnifySdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emnify\EmnifySdk\Model\EndpointQuota
+     * @return \Emnify\EmnifySdk\Model\Quota
      */
     public function endpointQuotaDataByEndpointIdGet($endpoint_id)
     {
@@ -3593,11 +3593,11 @@ class EndpointApi
      *
      * @throws \Emnify\EmnifySdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emnify\EmnifySdk\Model\EndpointQuota, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Emnify\EmnifySdk\Model\Quota, HTTP status code, HTTP response headers (array of strings)
      */
     public function endpointQuotaDataByEndpointIdGetWithHttpInfo($endpoint_id)
     {
-        $returnType = '\Emnify\EmnifySdk\Model\EndpointQuota';
+        $returnType = '\Emnify\EmnifySdk\Model\Quota';
         $request = $this->endpointQuotaDataByEndpointIdGetRequest($endpoint_id);
 
         try {
@@ -3648,7 +3648,7 @@ class EndpointApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emnify\EmnifySdk\Model\EndpointQuota',
+                        '\Emnify\EmnifySdk\Model\Quota',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3690,7 +3690,7 @@ class EndpointApi
      */
     public function endpointQuotaDataByEndpointIdGetAsyncWithHttpInfo($endpoint_id)
     {
-        $returnType = '\Emnify\EmnifySdk\Model\EndpointQuota';
+        $returnType = '\Emnify\EmnifySdk\Model\Quota';
         $request = $this->endpointQuotaDataByEndpointIdGetRequest($endpoint_id);
 
         return $this->client
@@ -3835,7 +3835,7 @@ class EndpointApi
      *
      * Set Data Quota
      *
-     * @param  \Emnify\EmnifySdk\Model\EndpointQuota1 $body body (required)
+     * @param  \Emnify\EmnifySdk\Model\Quota $body body (required)
      * @param  int $endpoint_id Numeric ID of an endpoint (required)
      *
      * @throws \Emnify\EmnifySdk\ApiException on non-2xx response
@@ -3852,7 +3852,7 @@ class EndpointApi
      *
      * Set Data Quota
      *
-     * @param  \Emnify\EmnifySdk\Model\EndpointQuota1 $body (required)
+     * @param  \Emnify\EmnifySdk\Model\Quota $body (required)
      * @param  int $endpoint_id Numeric ID of an endpoint (required)
      *
      * @throws \Emnify\EmnifySdk\ApiException on non-2xx response
@@ -3913,7 +3913,7 @@ class EndpointApi
      *
      * Set Data Quota
      *
-     * @param  \Emnify\EmnifySdk\Model\EndpointQuota1 $body (required)
+     * @param  \Emnify\EmnifySdk\Model\Quota $body (required)
      * @param  int $endpoint_id Numeric ID of an endpoint (required)
      *
      * @throws \InvalidArgumentException
@@ -3934,7 +3934,7 @@ class EndpointApi
      *
      * Set Data Quota
      *
-     * @param  \Emnify\EmnifySdk\Model\EndpointQuota1 $body (required)
+     * @param  \Emnify\EmnifySdk\Model\Quota $body (required)
      * @param  int $endpoint_id Numeric ID of an endpoint (required)
      *
      * @throws \InvalidArgumentException
@@ -3971,7 +3971,7 @@ class EndpointApi
     /**
      * Create request for operation 'endpointQuotaDataByEndpointIdPost'
      *
-     * @param  \Emnify\EmnifySdk\Model\EndpointQuota1 $body (required)
+     * @param  \Emnify\EmnifySdk\Model\Quota $body (required)
      * @param  int $endpoint_id Numeric ID of an endpoint (required)
      *
      * @throws \InvalidArgumentException
@@ -4087,7 +4087,7 @@ class EndpointApi
      *
      * @throws \Emnify\EmnifySdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emnify\EmnifySdk\Model\QuotaSMS, HTTP status code, HTTP response headers (array of strings)
+     * @return \Emnify\EmnifySdk\Model\Quota, HTTP status code, HTTP response headers (array of strings)
      */
     public function endpointQuotaSmsByEndpointIdGet($endpoint_id)
     {
@@ -4104,11 +4104,11 @@ class EndpointApi
      *
      * @throws \Emnify\EmnifySdk\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emnify\EmnifySdk\Model\QuotaSMS, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Emnify\EmnifySdk\Model\Quota, HTTP status code, HTTP response headers (array of strings)
      */
     public function endpointQuotaSmsByEndpointIdGetWithHttpInfo($endpoint_id)
     {
-        $returnType = '\Emnify\EmnifySdk\Model\QuotaSMS';
+        $returnType = '\Emnify\EmnifySdk\Model\Quota';
         $request = $this->endpointQuotaSmsByEndpointIdGetRequest($endpoint_id);
 
         try {
@@ -4193,7 +4193,7 @@ class EndpointApi
      */
     public function endpointQuotaSmsByEndpointIdGetAsyncWithHttpInfo($endpoint_id)
     {
-        $returnType = '\Emnify\EmnifySdk\Model\QuotaSMS';
+        $returnType = '\Emnify\EmnifySdk\Model\Quota';
         $request = $this->endpointQuotaSmsByEndpointIdGetRequest($endpoint_id);
 
         return $this->client

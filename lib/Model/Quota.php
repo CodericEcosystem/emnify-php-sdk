@@ -1,7 +1,7 @@
 <?php
 
 /**
- * QuotaSMS
+ * Quota
  *
  * PHP version 5
  *
@@ -33,14 +33,14 @@ use \ArrayAccess;
 use \Emnify\EmnifySdk\ObjectSerializer;
 
 /**
- * QuotaSMS Class Doc Comment
+ * Quota Class Doc Comment
  *
  * @category Class
  * @package  Emnify\EmnifySdk
  * @author   Coderic Development Team
  * @link     https://github.com/CodericEcosystem/emnify-php-sdk
  */
-class QuotaSMS implements ModelInterface, ArrayAccess
+class Quota implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class QuotaSMS implements ModelInterface, ArrayAccess
      *
      * @var string
      */
-    protected static $swaggerModelName = 'QuotaSMS';
+    protected static $swaggerModelName = 'Quota';
 
     /**
      * Array of property to type mappings. Used for (de)serialization
