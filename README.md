@@ -12,7 +12,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
 ```
 {
   "require": {
-    "emnify/emnify": "*@dev"
+    "emnify/emnify-sdk": "*@dev"
   }
 }
 ```
