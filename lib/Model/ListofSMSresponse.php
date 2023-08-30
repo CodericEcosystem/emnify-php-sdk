@@ -56,11 +56,11 @@ class ListofSMSresponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'submit_date' => 'string',
-        'delivery_date' => 'string',
-        'expiry_date' => 'string',
-        'final_date' => 'string',
-        'retry_date' => 'string',
+        'submit_date' => '\DateTime',
+        'delivery_date' => '\DateTime',
+        'expiry_date' => '\DateTime',
+        'final_date' => '\DateTime',
+        'retry_date' => '\DateTime',
         'last_delivery_attempt' => 'string',
         'retry_count' => 'string',
         'gsm_map_error' => 'string',
@@ -87,11 +87,11 @@ class ListofSMSresponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'submit_date' => null,
-        'delivery_date' => null,
-        'expiry_date' => null,
-        'final_date' => null,
-        'retry_date' => null,
+        'submit_date' => 'date-time',
+        'delivery_date' => 'date-time',
+        'expiry_date' => 'date-time',
+        'final_date' => 'date-time',
+        'retry_date' => 'date-time',
         'last_delivery_attempt' => null,
         'retry_count' => null,
         'gsm_map_error' => null,
