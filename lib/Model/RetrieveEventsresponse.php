@@ -65,7 +65,7 @@ class RetrieveEventsresponse implements ModelInterface, ArrayAccess
         'event_severity' => '\Emnify\EmnifySdk\Model\Apiv1eventEventSeverity',
         'organisation' => '\Emnify\EmnifySdk\Model\Apiv1eventOrganisation',
         'endpoint' => 'object',
-        'sim' => 'object',
+        'sim' => '\Emnify\EmnifySdk\Model\SimEntry',
         'imsi' => 'object'
     ];
 
