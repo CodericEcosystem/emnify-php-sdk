@@ -56,7 +56,7 @@ class RetrieveEndpointConnectivityStatusresponse implements ModelInterface, Arra
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'status' => '\Emnify\EmnifySdk\Model\Status',,
+        'status' => '\Emnify\EmnifySdk\Model\Status',
         'location' => 'object',
         'pdp_context' => 'object',
         'services' => 'string[]'
