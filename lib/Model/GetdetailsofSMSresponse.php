@@ -56,11 +56,12 @@ class GetdetailsofSMSresponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'submit_date' => 'string',
-        'delivery_date' => 'string',
-        'expiry_date' => 'string',
-        'final_date' => 'string',
-        'retry_date' => 'string',
+        'id' => 'int',
+        'submit_date' => '\DateTime',
+        'delivery_date' => '\DateTime',
+        'expiry_date' => '\DateTime',
+        'final_date' => '\DateTime',
+        'retry_date' => '\DateTime',
         'last_delivery_attempt' => 'string',
         'retry_count' => 'string',
         'gsm_map_error' => 'string',
@@ -75,10 +76,9 @@ class GetdetailsofSMSresponse implements ModelInterface, ArrayAccess
         'msc' => 'string',
         'udh' => 'string',
         'payload' => 'string',
-        'id' => 'int',
-        'status' => '\Emnify\EmnifySdk\Model\Status',,
-        'sms_type' => 'object',
-        'source_address_type' => 'object'
+        'status' => '\Emnify\EmnifySdk\Model\Status',
+        'sms_type' => '\Emnify\EmnifySdk\Model\Status',
+        'source_address_type' => '\Emnify\EmnifySdk\Model\Status'
     ];
 
     /**
