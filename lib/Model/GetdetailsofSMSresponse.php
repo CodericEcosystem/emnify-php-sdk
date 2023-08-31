@@ -76,7 +76,7 @@ class GetdetailsofSMSresponse implements ModelInterface, ArrayAccess
         'udh' => 'string',
         'payload' => 'string',
         'id' => 'int',
-        'status' => 'object',
+        'status' => '\Emnify\EmnifySdk\Model\Status',,
         'sms_type' => 'object',
         'source_address_type' => 'object'
     ];

@@ -58,7 +58,7 @@ class UpdateUserrequest implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'username' => 'string',
         'name' => 'string',
-        'status' => 'object'
+        'status' => '\Emnify\EmnifySdk\Model\Status',
     ];
 
     /**

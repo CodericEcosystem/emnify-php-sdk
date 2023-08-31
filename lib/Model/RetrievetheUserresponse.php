@@ -60,7 +60,7 @@ class RetrievetheUserresponse implements ModelInterface, ArrayAccess
         'username' => 'string',
         'name' => 'string',
         'created' => 'string',
-        'status' => 'object',
+        'status' => '\Emnify\EmnifySdk\Model\Status',,
         'organisation' => 'object',
         'roles' => 'object[]',
         'mfa' => 'object[]'

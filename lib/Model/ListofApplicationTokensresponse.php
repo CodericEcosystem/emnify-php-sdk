@@ -59,7 +59,7 @@ class ListofApplicationTokensresponse implements ModelInterface, ArrayAccess
         'id' => 'int',
         'description' => 'string',
         'created' => 'string',
-        'status' => 'object',
+        'status' => '\Emnify\EmnifySdk\Model\Status',,
         'expiry_date' => 'string',
         'ip' => 'string',
         'creator' => 'object'

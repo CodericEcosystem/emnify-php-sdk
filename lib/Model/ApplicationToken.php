@@ -57,7 +57,7 @@ class ApplicationToken implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'description' => 'string',
-        'status' => 'object'
+        'status' => '\Emnify\EmnifySdk\Model\Status',
     ];
 
     /**

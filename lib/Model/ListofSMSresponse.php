@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ListofSMSresponse
  *
@@ -44,17 +45,17 @@ class ListofSMSresponse implements ModelInterface, ArrayAccess
     const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $swaggerModelName = 'ListofSMSresponse';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerTypes = [
         'submit_date' => '\DateTime',
         'delivery_date' => '\DateTime',
@@ -76,16 +77,16 @@ class ListofSMSresponse implements ModelInterface, ArrayAccess
         'udh' => 'string',
         'payload' => 'string',
         'id' => 'int',
-        'status' => 'object',
-        'sms_type' => 'object',
-        'source_address_type' => 'object'
+        'status' => '\Emnify\EmnifySdk\Model\Status',
+        'sms_type' => '\Emnify\EmnifySdk\Model\Status',
+        'source_address_type' => '\Emnify\EmnifySdk\Model\Status'
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $swaggerFormats = [
         'submit_date' => 'date-time',
         'delivery_date' => 'date-time',
