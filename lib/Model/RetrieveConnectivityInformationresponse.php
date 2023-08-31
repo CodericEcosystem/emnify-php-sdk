@@ -58,8 +58,8 @@ class RetrieveConnectivityInformationresponse implements ModelInterface, ArrayAc
     protected static $swaggerTypes = [
         'ussd_info' => 'object',
         'subscriber_info' => 'object',
-        'request_timestamp' => 'string',
-        'reply_timestamp' => 'string'
+        'request_timestamp' => '\DateTime',
+        'reply_timestamp' => '\DateTime'
     ];
 
     /**
@@ -70,8 +70,8 @@ class RetrieveConnectivityInformationresponse implements ModelInterface, ArrayAc
     protected static $swaggerFormats = [
         'ussd_info' => null,
         'subscriber_info' => null,
-        'request_timestamp' => null,
-        'reply_timestamp' => null
+        'request_timestamp' => 'date-time',
+        'reply_timestamp' => 'date-time'
     ];
 
     /**
