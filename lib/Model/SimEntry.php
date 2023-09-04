@@ -592,7 +592,7 @@ class SimEntry implements ModelInterface, ArrayAccess
      * @return boolean
      */
     #[\ReturnTypeWillChange]
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->container[$offset]);
     }
@@ -605,7 +605,7 @@ class SimEntry implements ModelInterface, ArrayAccess
      * @return mixed
      */
     #[\ReturnTypeWillChange]
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return isset($this->container[$offset]) ? $this->container[$offset] : null;
     }
@@ -619,7 +619,7 @@ class SimEntry implements ModelInterface, ArrayAccess
      * @return void
      */
     #[\ReturnTypeWillChange]
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->container[] = $value;
@@ -636,7 +636,7 @@ class SimEntry implements ModelInterface, ArrayAccess
      * @return void
      */
     #[\ReturnTypeWillChange]
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         unset($this->container[$offset]);
     }
