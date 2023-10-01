@@ -65,7 +65,7 @@ class SimEntry implements ModelInterface, ArrayAccess
         'customer_org' => '\Emnify\EmnifySdk\Model\Apiv1simCustomerOrg',
         'issuer_org' => '\Emnify\EmnifySdk\Model\Apiv1simCustomerOrg',
         'reseller_org' => '\Emnify\EmnifySdk\Model\Apiv1simCustomerOrg',
-        'endpoint' => '\Emnify\EmnifySdk\Model\HasId',
+        'endpoint' => '\Emnify\EmnifySdk\Model\Endpoint',
         'imsi' => 'string',
         'msisdn' => 'string',
         'model' => '\Emnify\EmnifySdk\Model\SimModel'
